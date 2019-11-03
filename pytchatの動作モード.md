@@ -77,6 +77,22 @@ def func(chatdata):
         print(f"{c.datetime} [{c.author.name}]-{c.message} {c.amountString}")
         chat.tick()
 ```
+
+### on-demandモード時：
+ユーザーからのget()要求があったとき、Bufferに残っている全てのチャットデータ（chat_components）を取り出してChatProcessorに一旦渡します。
+その後ChatProcessorから加工後のデータを受け取ってユーザーに返します。
+
+
+### callbackモード時：
+一定間隔でcallback呼び出しが行われる際、Bufferに残っている全てのchat_componentsを取り出してChatProcessorに一旦渡します。
+その後ChatProcessorから加工後のデータを受け取ってcallback関数の引数に設定し呼び出します。
+
+
+### directモード時：
+Bufferを経由せず、チャットデータを取得した後すぐに、ChatProcessorにchat_componentsを渡します。
+その後ChatProcessorから加工後のデータを受け取ってcallback関数の引数に設定し呼び出します。
+
+
 モード図解
 <img src ="https://taizan-hokuto.github.io/statics/pytchat_mode%20diagram.svg" alt="pytchat_3modes_diagram" width="100%" height="100%">
 
