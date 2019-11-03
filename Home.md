@@ -3,9 +3,9 @@ Welcome to the pytchat wiki!
 pytchatは、Youtubeのライブチャットを取得するためのpythonライブラリです。
 
 特徴
-+ ブラウザがYoutube配信ページでライブチャットを取得する仕組みをエミュレーションしているため、比較的軽量にチャットデータを取得できます。
++ ブラウザがチャットデータを取得するのと同じ仕組みを利用しているため、Youtube API不要です。
 
-+ ブラウザと同じ仕組みでチャットを取得しているので、当然Youtube apiは不要です。また、Selenium(ヘッドレスブラウザ)やBeautiful Soupによるスクレイピングを一切行っていません。
++ Selenium(ヘッドレスブラウザ)やBeautiful Soupによるスクレイピングを一切行っていません。
 
 + SeleniumやYoutube APIで取得したチャットデータで必要だった「重複チャットデータの比較と排除」が不要のため、cpuパワーや帯域が抑えられています。
 
@@ -15,7 +15,7 @@ pytchatは、Youtubeのライブチャットを取得するためのpythonライ
 
 + バッファリングは、マルチスレッドを利用するクラスに加え、pythonの強力な非同期I/O(asyncio）を利用するクラスも用意しています。
 
-+ Youtube APIが出力するJSONデータと互換性のあるChatProcessorを同梱しているので、既存アプリの置き換えも用意です。チャットを加工するクラスは自由にカスタマイズ可能です。
++ Youtube APIが出力するJSONデータと互換性のあるChatProcessorを同梱しているので、既存アプリの置き換えも容易です。チャットを加工するクラスは自由にカスタマイズ可能です。
 
 [pytchatの動作モードについて](https://github.com/taizan-hokuto/pytchat/wiki/pytchat%E3%81%AE%E5%8B%95%E4%BD%9C%E3%83%A2%E3%83%BC%E3%83%89)
 <br>
