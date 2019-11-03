@@ -39,9 +39,22 @@ def func(chatdata):
 directモードでは、Bufferを使用せずにcallbackパラメータに指定された関数を呼び出します。<br>
 directモードを有効にするには以下の2つの条件を満たす必要があります。
 + コンストラクタでdirect_mode = Trueを指定
-+ コンストラクタでcallbackパラメータに呼び出し先の関数名を指定
-<br>
-directモードが有効になっている状態でget()関数を呼び出すと、IllegalFunctinCall例外が発生します。<br><br>
+
+　　　かつ
+
++ コンストラクタでcallbackパラメータに呼び出し先の関数名を指定<br>
+
+⇒direct_modeが有効になります。<br><br>
+
+逆に
+
++ directモードが有効になっている状態でget()関数を呼び出した場合
+
+　　　または
+
++ direct_mode = Trueにもかかわらずcallbackパラメータに何も指定しなかった場合<br>
+
+⇒IllegalFunctinCall例外が発生します。<br><br>
 
 directモードはbufferを使用しない分、理論的に使用メモリが抑えられ動作も軽いはずですが、呼び出し先のcallback内での処理に長時間（5秒～10秒）以上かかる場合、チャットデータの取得遅延が生じます。
 
