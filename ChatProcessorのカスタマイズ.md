@@ -2,31 +2,21 @@ pytchatはバックグラウンドでYoutubeから一定間隔でライブチャ
 動作モードによりタイミングや経路は異なりますが、いずれもChatProcessorはLiveChatオブジェクトから<br>
 定型的なデータ（chat_components：後述）を受け取り、任意の形に加工したデータを返す、という点を押さえておけばokです。
 
-### on-demandモード時：
-ユーザーからのget()要求があったとき、Bufferに残っている全てのチャットデータ（chat_components）を取り出してChatProcessorに一旦渡します。
-その後ChatProcessorから加工後のデータを受け取ってユーザーに返します。
+参考:[pytchatの動作モード](https://github.com/taizan-hokuto/pytchat/wiki/pytchat%E3%81%AE%E5%8B%95%E4%BD%9C%E3%83%A2%E3%83%BC%E3%83%89)
 
 
-### callbackモード時：
-一定間隔でcallback呼び出しが行われる際、Bufferに残っている全てのchat_componentsを取り出してChatProcessorに一旦渡します。
-その後ChatProcessorから加工後のデータを受け取ってcallback関数の引数に設定し呼び出します。
+ChatProcessorは任意に拡張し、コンストラクタのprocessorパラメータで指定することができます。
 
-
-### directモード時：
-Bufferを経由せず、チャットデータを取得した後すぐに、ChatProcessorにchat_componentsを渡します。
-その後ChatProcessorから加工後のデータを受け取ってcallback関数の引数に設定し呼び出します。
-
-ChatProcessorは、自作してコンストラクタのprocessorパラメータで指定することができます。
-
-ChatProcessorは、下記のように、chat_componentsを引数にとるprocessというインターフェースを持ちます。
+自作のChatProcessorは、chat_componentsを引数にとるprocessというインターフェースを持たなければなりません。
 
 ```python
-class ChatProcessor:
+from .processors.chat_processor import ChatProcessor
+class MyProcessor(ChatProcessor):
     def process(self, chat_components):
-        pass
+        #...process chatdata...
 ```
 
-chat_componentsは、以下のように、video_id、timeout、chatdataをキーに持つ辞書(component)のリストです。
+_chat_components_ は、video_id、timeout、chatdataをキーに持つ辞書(component)のリストです。
 ```python
 chat_components:[LIST:component]
 
