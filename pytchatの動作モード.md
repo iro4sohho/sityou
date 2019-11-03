@@ -78,5 +78,5 @@ def func(chatdata):
         chat.tick()
 ```
 モード図解
-<img src ="https://taizan-hokuto.github.io/statics/diagram.svg" alt="pytchat_3modes_diagram" width="100%" height="100%">
+<img src ="https://taizan-hokuto.github.io/statics/pytchat_mode%20diagram.svg" alt="pytchat_3modes_diagram" width="100%" height="100%">
 
