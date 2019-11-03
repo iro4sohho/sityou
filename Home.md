@@ -40,9 +40,29 @@ def func(chatdata):
 ## directモード
 directモードでは、Bufferを使用せずにcallbackパラメータに指定された関数を呼び出します。<br>
 directモードを有効にするには以下の2つの条件を満たす必要があります。
-+ コンストラクタでdirect_modeを指定
++ コンストラクタでdirect_mode = Trueを指定
 + コンストラクタでcallbackパラメータに呼び出し先の関数名を指定
-directモードが有効になっている状態でget()関数を呼び出すと、IllegalFunctinCall例外が発生します。<br>
+<br>
+directモードが有効になっている状態でget()関数を呼び出すと、IllegalFunctinCall例外が発生します。<br><br>
 
-directモードはbufferを使用しない分、理論的には使用メモリが抑えられ動作も軽いはずですが、チャットデータ取得
+directモードはbufferを使用しない分、理論的に使用メモリが抑えられ動作も軽いはずですが、呼び出し先のcallback内での処理に長時間（5秒～10秒）以上かかる場合、チャットデータの取得遅延が生じます。
+
+```python
+from pytchat import LiveChat
+import time
+
+#callbackパラメータに呼び出し先の関数名を指定します。
+#direct_mode = Trueを指定します。
+chat = LiveChat("G1w62uEMZ74", callback = func,
+                               direct_mode = True)
+while chat.is_alive():
+    #他のバックグラウンドで行う任意の処理をここに書きます
+    time.sleep(3)
+
+#自動的に呼び出される関数
+#returnまで時間がかかる場合（5秒～10秒以上）、チャットデータの取得遅延が生じます。
+def func(chatdata):
+    for c in chatdata.items:
+        print(f"{c.datetime} [{c.author.name}]-{c.message} {c.amountString}")
+        chat.tick()
 
