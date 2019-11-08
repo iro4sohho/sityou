@@ -1,7 +1,9 @@
 # LiveChatAsync
 
-LiveChatAsync object fetches chat data to buffer with aiohttp on asyncio context.
-
+LiveChatAsync object 
++ fetches chat data and store in the buffer with aiohttp on asyncio context.
++ responds to user inquiries of get().
++ invokes callback function with processed chat data.
 ```
 from pytchat import LiveChatAsync
 chat = LiveChatAync("gb01h_eT0pw")
