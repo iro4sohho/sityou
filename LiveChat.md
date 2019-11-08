@@ -1,7 +1,7 @@
 # LiveChat
 
-LiveChat object fetches livechat data background with threadpool.
-buffer
+LiveChat object fetches chat data to buffer with thread pool.
+
 ```
 from pytchat import LiveChat
 chat = LiveChat("gb01h_eT0pw")
@@ -21,7 +21,7 @@ direct_mode|bool| |If True, invoke specified callback function without using buf
 ## get()
 description|return value
 ---|---
-Get processed chat data.|chat_components : List<dict>
+Get processed chat data.|chat_components : List[dict]
 
 ## is_alive()
 description|return value
