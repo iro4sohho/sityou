@@ -18,8 +18,8 @@ video_id|str|*|ID of youtube video.|-
 processor|ChatPrcessor|||DefaultProcessor
 buffer|Buffer||buffer of chat data fetched background|Buffer(maxsize=20)
 interruptable|bool|||True
-callback|func||function called from _listen()  periodically|None
-done_callback|func||function called when listener ends.|None
+callback|func||[optional] function called from _listen()  periodically|None
+done_callback|func||[optional] function called when listener ends.|None
 direct_mode|bool| |If True, invoke specified callback function without using buffer.|False
 
 ## get()
