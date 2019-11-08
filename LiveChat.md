@@ -1,5 +1,3 @@
-# LiveChat
-
 LiveChat object 
 + fetches chat data and store in the buffer with ThreadpoolExecutor
 + responds to user inquiries of get().
