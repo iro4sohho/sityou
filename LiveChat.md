@@ -1,11 +1,12 @@
 # LiveChat
 
-livechat object.
+LiveChat object fetches livechat data background with threadpool.
+buffer
 ```
 from pytchat import LiveChat
 chat = LiveChat("gb01h_eT0pw")
 ```
-## constructor params
+## #constructor params
 
 name|type|required|remarks|default value
 ---|---|---|---|---
@@ -17,8 +18,18 @@ callback|func||function called from _listen()  periodically|None
 done_callback|func||function called when listener ends.|None
 direct_mode|bool| |If True, invoke specified callback function without using buffer.|False
 
-## functions
+## get()
+description|return value
+---|---
+Get processed chat data.|chat_components : List<dict>
 
-```
-get()
-```
+## is_alive()
+description|return value
+---|---
+Check if livechat stream is alive.|bool
+
+## terminate()
+description|return value
+---|---
+Terminate fetching livechat.|-
+
