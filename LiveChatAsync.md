@@ -21,7 +21,7 @@ direct_mode|bool| |If True, invoke specified callback function without using buf
 ## get()
 description|return value
 ---|---
-Get processed chat data.|chat_components : List[dict]
+Get processed chat data.|[chat_components](https://github.com/taizan-hokuto/pytchat/wiki/chat_component) : List[dict]
 
 ## is_alive()
 description|return value
