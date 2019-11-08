@@ -1,7 +1,11 @@
 # LiveChat
 
-LiveChat object fetches chat data to buffer with thread pool.
+LiveChat object 
++ fetches chat data and store in the buffer.
++ responds to user inquiries of get().
++ invokes callback function with processed chat data.
 
+## Usage
 ```
 from pytchat import LiveChat
 chat = LiveChat("gb01h_eT0pw")
