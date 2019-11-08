@@ -1,5 +1,3 @@
-# LiveChatAsync
-
 LiveChatAsync object 
 + fetches chat data and store in the buffer with aiohttp on asyncio context.
 + responds to user inquiries of get().
