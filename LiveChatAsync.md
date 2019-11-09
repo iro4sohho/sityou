@@ -1,5 +1,5 @@
 LiveChatAsync object 
-+ fetches chat data and store in the buffer with aiohttp on asyncio context.
++ fetches chat data and stores in the buffer with aiohttp on asyncio context.
 + responds to user inquiries of get().
 + invokes callback function with processed chat data.
 ```
@@ -21,7 +21,7 @@ direct_mode|bool| |If True, invoke specified callback function without using buf
 ## get()
 description|return value
 ---|---
-Get processed chat data.|Object
+Get processed chat data.|processed chat data
 
 ## is_alive()
 description|return value
