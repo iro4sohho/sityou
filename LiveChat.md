@@ -13,7 +13,7 @@ chat = LiveChat("gb01h_eT0pw")
 name|type|required|remarks|default value
 ---|---|---|---|---
 video_id|str|*|ID of youtube video.|-
-processor|ChatPrcessor|||DefaultProcessor
+processor|ChatProcessor|||DefaultProcessor
 buffer|Buffer||buffer of chat data fetched background|Buffer(maxsize=20)
 interruptable|bool|||True
 callback|func||[optional] function called from _listen()  periodically|None
@@ -23,7 +23,7 @@ direct_mode|bool| |If True, invoke specified callback function without using buf
 ## get()
 description|return value
 ---|---
-Get processed chat data.|chat_components : List[dict]
+Get processed chat data.|processed chat data
 
 ## is_alive()
 description|return value
