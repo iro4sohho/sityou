@@ -18,7 +18,7 @@ callback|func||function called from _listen()  periodically|None
 done_callback|func||function called when listener ends.|None
 direct_mode|bool| |If True, invoke specified callback function without using buffer.|False
 
-## get()
+## await get()
 description|return value
 ---|---
 Get processed chat data.|processed chat data
