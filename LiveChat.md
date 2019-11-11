@@ -1,5 +1,5 @@
 LiveChat object 
-+ fetches chat data and stores in the buffer with ThreadpoolExecutor
++ fetches chat data and stores them in buffer with ThreadpoolExecutor
 + responds to user inquiries of get().
 + invokes callback function with processed chat data.
 
@@ -14,16 +14,16 @@ name|type|required|remarks|default value
 ---|---|---|---|---
 video_id|str|*|ID of youtube video.|-
 processor|ChatProcessor|||DefaultProcessor
-buffer|Buffer||buffer of chat data fetched background|Buffer(maxsize=20)
+buffer|Buffer||buffer of chat data fetched background.|Buffer(maxsize=20)
 interruptable|bool|||True
-callback|func||[optional] function called from _listen()  periodically|None
+callback|func||[optional] function called from _listen() periodically.|None
 done_callback|func||[optional] function called when listener ends.|None
 direct_mode|bool| |If True, invoke specified callback function without using buffer.|False
 
 ## get()
 description|return value
 ---|---
-Get processed chat data.|processed chat data
+Get processed chat data from buffer.|processed chat data
 
 ## is_alive()
 description|return value
