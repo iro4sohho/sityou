@@ -25,6 +25,16 @@ description|return value
 ---|---
 Get processed chat data from buffer.|processed chat data
 
+## pause()
+description|return value
+---|---
+pause chat fetching to buffer.|-
+
+## resume()
+description|return value
+---|---
+resume chat fetching to buffer.|-
+
 ## is_alive()
 description|return value
 ---|---
