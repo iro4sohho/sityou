@@ -33,5 +33,5 @@ Check if chat stream is alive.|bool
 ## terminate()
 description|return value
 ---|---
-Terminate fetching livechat.|-
+Terminate fetching chat.|-
 
