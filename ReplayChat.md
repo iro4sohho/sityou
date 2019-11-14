@@ -28,7 +28,7 @@ Get processed chat data from buffer.|processed chat data
 ## is_alive()
 description|return value
 ---|---
-Check if livechat stream is alive.|bool
+Check if chat stream is alive.|bool
 
 ## terminate()
 description|return value
