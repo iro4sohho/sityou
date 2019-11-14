@@ -5,7 +5,8 @@ a python library for youtube livechat.
 ## API
  * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat)
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync)
-
+ * [ReplayChat](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChat)
+ * [ReplayChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChatAsync)
 ## Chat Processor
  * DefaultProcessor
  * CompatibleProcessor
