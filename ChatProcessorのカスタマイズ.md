@@ -9,8 +9,7 @@ pytchatには組み込みのChatProcessorとして以下のクラスを同梱し
 
 
 ## 拡張
-
-ChatProcessorは任意に拡張し、LiveChatオブジェクトのコンストラクタのprocessorパラメータで指定することができます。
+自作したChatProcessorは、LiveChatオブジェクトのコンストラクタのprocessorパラメータで指定することができます。
 
 ```python
 from pytchat import LiveChat
@@ -22,7 +21,7 @@ chat = LiveChat("video_id", processor = MyProcessor())
 
 ## インタフェース
 
-自作のChatProcessorは、1個のリスト(chat_components)を引数にとる**process**という関数を持たなければなりません。
+ChatProcessorは、1個のリスト(chat_components)を引数にとる**process**という関数を持たなければなりません。
 
 ```python
 class MyProcessor:
