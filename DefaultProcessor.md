@@ -103,12 +103,12 @@ Members of author object.
   <tr>
     <td>channelId</td>
     <td>str</td>
-    <td></td>
+    <td>*Author's channel ID. NOT channel ID of videos.</td>
   </tr>
   <tr>
     <td>channelUrl</td>
     <td>str</td>
-    <td>*Author's channel ID. NOT channel ID of videos.</td>
+    <td></td>
   </tr>
   <tr>
     <td>imageUrl</td>
