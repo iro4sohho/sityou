@@ -1,10 +1,17 @@
 DefaultProcessor object
 + is a default chat processor of pytchat.
-
+### Usage
+```python
+chat = LiveChat("xxxxxxxxxxx") #video_id
+data = chat.get()
+items = data.items()
+for c in items:
+    print(c.message)
+```
 ## items()
 description|return value
 ---|---
-Get list of chat items.|List of chat items
+Get list of [chat items](#member-of-chat-item).|List of chat items
 
 ## tick()
 description|return value
@@ -17,7 +24,7 @@ description|return value
 wait for next chat on asyncio context.|-
 
 
-## #Member of Chat Item
+## #Members of Chat Item
 
 <table>
   <tr>
@@ -81,7 +88,7 @@ wait for next chat on asyncio context.|-
   </tr>
 </table>
 
-Structure of author object.
+Members of author object.
 <table>
   <tr>
     <th>name</th>
