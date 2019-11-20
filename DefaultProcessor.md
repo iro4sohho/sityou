@@ -11,7 +11,7 @@ for c in items:
 ## items()
 description|return value
 ---|---
-Get list of [chat items](#member-of-chat-item).|List of chat items
+Get list of [chat items](#members-of-chat-item).|List of chat items
 
 ## tick()
 description|return value
