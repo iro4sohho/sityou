@@ -3,10 +3,13 @@ DefaultProcessor object
 ### Usage
 ```python
 chat = LiveChat("xxxxxxxxxxx") #video_id
-data = chat.get()
-items = data.items()
-for c in items:
-    print(c.message)
+
+while True:
+    data = chat.get()
+    items = data.items()
+    for c in items:
+        print(c.message)
+        data.tick()
 ```
 ## items()
 description|return value
