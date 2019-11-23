@@ -5,7 +5,7 @@ DefaultProcessor object
 chat = LiveChat("xxxxxxxxxxx") #video_id
 
 while True:
-    data = chat.get()
+    data = chat.get() #get processed data.
     items = data.items()
     for c in items:
         print(c.message)
