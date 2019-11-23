@@ -8,7 +8,7 @@ while True:
     data = chat.get() #get processed data.
     items = data.items()
     for c in items:
-        print(c.message)
+        print(c.author.name, c.message)
         data.tick()
 ```
 ## items()
