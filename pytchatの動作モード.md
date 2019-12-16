@@ -15,7 +15,7 @@ while chat.is_alive():
         data.tick()
 ```
 ## callbackモード
-calbackモードでは、自動的にcallbackパラメータに指定された関数を呼び出します。<br>
+calbackモードでは、一定間隔で自動的にcallbackパラメータに指定された関数を呼び出します。<br>
 コンストラクタでcallbackパラメータに呼び出し先の関数名を指定することで、callbackモードが有効になります。<br>
 callbackモードが有効になっている状態でget()関数を呼び出すと、IllegalFunctinCall例外が発生します。<br>
 
@@ -30,6 +30,7 @@ while chat.is_alive():
     time.sleep(3)
 
 #自動的に呼び出される関数
+#Youtubeチャットデータのinterval（timeoutMsミリ秒）の間隔で定期的に呼ばれます。
 def func(chatdata):
     for c in chatdata.items:
         print(f"{c.datetime} [{c.author.name}]-{c.message} {c.amountString}")
