@@ -60,9 +60,9 @@ wait for next chat on asyncio context.|-
     <td>str</td>
     <td>ex. "2019-10-10 12:34:56"</td>
   </tr>
-    <td>timestampText</td>
+    <td>elapsedTime</td>
     <td>str</td>
-    <td>elapsed time. (ex. "1:02:27") *Replay Only</td>
+    <td>elapsed time. (ex. "1:02:27") *Replay Only.</td>
   </tr>
   <tr>
     <td>amountValue</td>
