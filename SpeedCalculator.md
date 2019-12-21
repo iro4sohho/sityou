@@ -16,9 +16,11 @@ while chat.is_alive():
 import SpeedCalculator
 chat = LiveChat("xxxxxxxxxxx", 
            processor = SpeedCalculator(), 
-           callback = print_speed) 
+           callback =disp_speed) 
+while chat.is_alive():
+    time.sleep(3)
 
-def print_speed(speed):
+def disp_speed(speed):
     print(speed)
 ```
 
