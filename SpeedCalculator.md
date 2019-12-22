@@ -5,7 +5,7 @@ SpeedCalculatorはチャットの勢いを算出するChatProcessorです。<br>
 ### on-demand style
 ```python
 import SpeedCalculator
-chat = LiveChat("xxxxxxxxxxx", processor = SpeedCalculator(capacity = 20)) 
+chat = LiveChat(video_id = "xxxxxxxxxxx", processor = SpeedCalculator(capacity = 20)) 
 while chat.is_alive():
     speed = chat.get()
     print(speed)
