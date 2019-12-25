@@ -7,6 +7,13 @@ LiveChat object
 ```
 from pytchat import LiveChat
 chat = LiveChat("gb01h_eT0pw")
+
+while chat.is_alive():
+    data = chat.get() #get processed data.
+    items = data.items()
+    for c in items:
+        print(c.author.name, c.message)
+        data.tick()
 ```
 ## #constructor params
 
