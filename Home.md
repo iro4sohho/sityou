@@ -1,5 +1,5 @@
 ![PYTCHAT LOGO](https://taizan-hokuto.github.io/statics/LOGO.png) 
-a python library for youtube livechat.
+### A python library for youtube livechat without YouTube API, Selenium or BeautifulSoup.
 <br>
 
 ## API
