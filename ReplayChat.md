@@ -2,8 +2,7 @@ ReplayChat object
 + fetches past chat data of archived videos and stores them in buffer with ThreadpoolExecutor.
 + responds to user inquiries of get().
 + invokes callback function with processed chat data.
-
-## Usage
++ can retrieve chat data disabled by editing video.
 ```
 from pytchat import ReplayChat
 chat = ReplayChat("gb01h_eT0pw", seektime = 1000)
