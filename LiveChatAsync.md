@@ -2,9 +2,27 @@ LiveChatAsync object
 + fetches chat data and stores them in buffer with aiohttp on asyncio context.
 + responds to user inquiries of get().
 + invokes callback function with processed chat data.
-```
+
+## Usage
+```python
 from pytchat import LiveChatAsync
-chat = LiveChatAync("gb01h_eT0pw")
+import asyncio
+
+async def main():
+  chat = LiveChatAsync("G1w62uEMZ74", callback = func)
+  while chat.is_alive():
+    await asyncio.sleep(3)
+    #other background operation.
+
+#callback function is automatically called periodically.
+async def func(data):
+  for c in data.items:
+    print(f"{c.datetime} [{c.author.name}]-{c.message} {c.amountString}")
+    await data.tick_async()
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+
 ```
 ## #constructor params
 
