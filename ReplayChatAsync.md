@@ -2,6 +2,7 @@ ReplayChatAsync object
 + fetches past chat data of archived videos and stores them in buffer with aiohttp on asyncio context.
 + responds to user inquiries of get().
 + invokes callback function with processed chat data.
++ can retrieve chat data disabled by editing video.
 
 ## Usage
 ```
