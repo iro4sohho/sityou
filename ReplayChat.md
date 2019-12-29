@@ -3,9 +3,18 @@ ReplayChat object
 + responds to user inquiries of get().
 + invokes callback function with processed chat data.
 + can retrieve chat data disabled by editing video.
-```
+```python
 from pytchat import ReplayChat
-chat = ReplayChat("gb01h_eT0pw", seektime = 1000)
+import time
+
+chat = ReplayChat("gb01h_eT0pw", seektime = 1000, callback = disp)
+while chat.is_alive():
+  time.sleep(3)
+
+def disp(data):
+  for c in data.items:
+    print(f"{c.datetime} [{c.author.name}]-{c.message} {c.amountString}")
+    time.sleep(3)
 ```
 ## #constructor params
 
