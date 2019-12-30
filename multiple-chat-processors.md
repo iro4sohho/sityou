@@ -28,7 +28,6 @@ The order of returns depends on the order of specifying processors.
 ## Example code:
 ```python
 from pytchat import LiveChat, DefaultProcessor, SpeedCalculator
-import time
 
 def multiple_processor():
   chat = LiveChat("video_id",  
