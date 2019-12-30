@@ -27,7 +27,7 @@ The order of returns depends on the order of specifying processors.
 <br>
 ## Example code:
 ```python
-from pytchat import LiveChat,ReplayChat, DefaultProcessor, SpeedCalculator
+from pytchat import LiveChat, DefaultProcessor, SpeedCalculator
 import time
 
 def multiple_processor():
