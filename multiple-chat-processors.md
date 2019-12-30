@@ -8,18 +8,18 @@ by specifying chat processors as **tuple**.<br>
 chat = LiveChat("video_id", processor = (DefaultProcessor(), SpeedCalculator()) )
 
 ```
-
+<br><br>
 The return values are also tuple.<br>
 <br>
 各々のptocessorの戻り値（加工後データ）もタブルで返ってきます。<br>
-<br>
 ```python
 data, speed = chat.get()
 
 ## on the asyncio context
 data, speed = await chat.get()
 ```
-`data` is return of DefaultProcessor, and `speed` is return of SpeedCalculator.
+
+In the above example, `data` is return of DefaultProcessor, and `speed` is return of SpeedCalculator.
 <br>
 <br>
 The order of returns depends on the order of specifying processors.
