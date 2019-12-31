@@ -14,9 +14,6 @@ The return values are also tuple.<br>
 各々のprocessorの戻り値（加工後データ）もタブルで返ってきます。<br>
 ```python
 data, speed = chat.get()
-
-## on the asyncio context
-data, speed = await chat.get()
 ```
 
 In the above example, `data` is return of DefaultProcessor, and `speed` is return of SpeedCalculator.
