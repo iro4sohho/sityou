@@ -22,7 +22,7 @@ data, speed = await chat.get()
 In the above example, `data` is return of DefaultProcessor, and `speed` is return of SpeedCalculator.
 <br>
 <br>
-The order of returns depends on the order of specifying processors.
+The order of returns depends on the order of specified processors.
 <br>
 <br>
 ## Example code:
