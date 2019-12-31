@@ -11,7 +11,7 @@ chat = LiveChat("video_id", processor = (DefaultProcessor(), SpeedCalculator()) 
 <br><br>
 The return values are also tuple.<br>
 <br>
-各々のptocessorの戻り値（加工後データ）もタブルで返ってきます。<br>
+各々のprocessorの戻り値（加工後データ）もタブルで返ってきます。<br>
 ```python
 data, speed = chat.get()
 
