@@ -51,7 +51,7 @@ wait for next chat on asyncio context.|-
     <td>Emojis are represented by ":(shortcut text):"</td>
   </tr>
   <tr>
-    <td>message</td>
+    <td>messageEx</td>
     <td>str</td>
     <td>List of messages and emojis: emojis are represented by URL for image.</td>
   </tr>
