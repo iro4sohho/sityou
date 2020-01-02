@@ -1,4 +1,4 @@
-#### Warning : ReplayChat is deprecated and will be integrated with LiveChat in v0.5.0.0
+#### Warning : ReplayChat is deprecated and will be integrated with LiveChat.
 ReplayChat object 
 + fetches past chat data of archived videos and stores them in buffer with ThreadpoolExecutor.
 + responds to user inquiries of get().
