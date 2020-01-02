@@ -1,4 +1,4 @@
-## Warning : ReplayChatAsync is deprecated and will be integrated with LiveChatAsync in v0.5.0.0
+#### Warning : ReplayChatAsync is deprecated and will be integrated with LiveChatAsync in v0.5.0.0
 ReplayChatAsync object 
 + fetches past chat data of archived videos and stores them in buffer with aiohttp on asyncio context.
 + responds to user inquiries of get().
