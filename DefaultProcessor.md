@@ -111,7 +111,7 @@ Members of author object.
   <tr>
     <td>channelId</td>
     <td>str</td>
-    <td>*chatter's channel ID.</td>
+    <td>chatter's channel ID.</td>
   </tr>
   <tr>
     <td>channelUrl</td>
@@ -121,12 +121,12 @@ Members of author object.
   <tr>
     <td>imageUrl</td>
     <td>str</td>
-    <td></td>
+    <td>chatter's icon</td>
   </tr>
   <tr>
     <td>badgeUrl</td>
     <td>str</td>
-    <td></td>
+    <td>member badge</td>
   </tr>
   <tr>
     <td>isVerified</td>
