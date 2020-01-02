@@ -48,7 +48,12 @@ wait for next chat on asyncio context.|-
   <tr>
     <td>message</td>
     <td>str</td>
-    <td>emojis are represented by ":(shortcut text):"</td>
+    <td>Emojis are represented by ":(shortcut text):"</td>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td>str</td>
+    <td>List of messages and emojis: emojis are represented by URL for image.</td>
   </tr>
   <tr>
     <td>timestamp</td>
@@ -58,11 +63,11 @@ wait for next chat on asyncio context.|-
   <tr>
     <td>datetime</td>
     <td>str</td>
-    <td>ex. "2019-10-10 12:34:56"</td>
+    <td>e.g. "2019-10-10 12:34:56"</td>
   </tr>
     <td>elapsedTime</td>
     <td>str</td>
-    <td>elapsed time. (ex. "1:02:27") *Replay Only.</td>
+    <td>elapsed time. (e.g. "1:02:27") *Replay Only.</td>
   </tr>
   <tr>
     <td>amountValue</td>
@@ -72,12 +77,12 @@ wait for next chat on asyncio context.|-
   <tr>
     <td>amountString</td>
     <td>str</td>
-    <td>ex. "$ 1,234"</td>
+    <td>e.g. "$ 1,234"</td>
   </tr>
   <tr>
     <td>currency</td>
     <td>str</td>
-    <td><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency codes</a> (ex. "USD")</td>
+    <td><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency codes</a> (e.g. "USD")</td>
   </tr>
   <tr>
     <td>bgColor</td>
@@ -106,7 +111,7 @@ Members of author object.
   <tr>
     <td>channelId</td>
     <td>str</td>
-    <td>*chatter's channel ID. NOT author's channel ID.</td>
+    <td>*chatter's channel ID.</td>
   </tr>
   <tr>
     <td>channelUrl</td>
