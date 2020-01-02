@@ -1,3 +1,4 @@
+#### planning to integrate ReplayChatAsync into LiveChatAsync
 LiveChatAsync object 
 + fetches chat data and stores them in buffer with aiohttp on asyncio context.
 + responds to user inquiries of get().
