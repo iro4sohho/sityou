@@ -28,7 +28,7 @@ interruptable|bool|||True
 callback|func||[optional] function called from _listen() periodically.|None
 done_callback|func||[optional] function called when listener ends.|None
 direct_mode|bool| |If True, invoke specified callback function without using buffer.|False
-seektime|int| |seek time of chat (seconds).|0 (start of chat)
+seektime|int| |seek time of chat (seconds).|0 (*start of chat data. If youtube stores chatdata of waiting time, the start timestamp is negative value.)
 ## get()
 description|return value
 ---|---
