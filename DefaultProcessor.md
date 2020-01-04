@@ -72,7 +72,7 @@ wait for next chat on asyncio context.|-
   <tr>
     <td>amountValue</td>
     <td>float</td>
-    <td>ex. 1,234.0</td>
+    <td>e.g. 1,234.0</td>
   </tr>
   <tr>
     <td>amountString</td>
