@@ -17,8 +17,14 @@ import MyProcessor
 
 chat = LiveChat("video_id", processor = MyProcessor())
 ```
+<br>
+<br>
 
+ChatProcessorを複数使用する場合は、タプルで指定します。
 
+```python
+chat = LiveChat("video_id", processor = Processor1(), Processor2())
+```
 ## インタフェース
 
 ChatProcessorは、1個のリスト(chat_components)を引数にとる**process**という関数を持たなければなりません。
