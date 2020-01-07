@@ -1,9 +1,9 @@
-#### planning to integrate ReplayChatAsync into LiveChatAsync
+#### ReplayChatAsync integrated into LiveChatAsync
 LiveChatAsync object 
 + fetches chat data and stores them in buffer with aiohttp on asyncio context.
 + responds to user inquiries of get().
 + invokes callback function with processed chat data.
-
++ can replay archived chat data.
 ## Usage
 ```python
 from pytchat import LiveChatAsync
