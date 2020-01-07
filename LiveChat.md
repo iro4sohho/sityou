@@ -3,7 +3,7 @@ LiveChat object
 + fetches chat data and stores them in buffer with ThreadpoolExecutor
 + responds to user inquiries of get().
 + invokes callback function with processed chat data.
-
++ can replay archived chat data.
 ## Usage
 ```
 from pytchat import LiveChat
@@ -24,10 +24,11 @@ video_id|str|*|ID of youtube video.|-
 processor|ChatProcessor|||DefaultProcessor
 buffer|Buffer||buffer of chat data fetched background.|Buffer(maxsize=20)
 interruptable|bool|||True
-callback|func||[optional] function called from _listen() periodically.|None
-done_callback|func||[optional] function called when listener ends.|None
+callback|func||function called from _listen() periodically.|None
+done_callback|func||function called when listener ends.|None
 direct_mode|bool| |If True, invoke specified callback function without using buffer.|False
-
+seektime|int| |start position of fetching chat (seconds). This option is valid for archived chat only. If negative value, fetches chatdata which is posted before start broadcasting.|0
+force_replay|bool| |force to fetch archived chat data, even if specified video is live.|False
 ## get()
 description|return value
 ---|---
