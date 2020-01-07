@@ -1,4 +1,3 @@
-#### ReplayChatAsync integrated into LiveChatAsync
 LiveChatAsync object 
 + fetches chat data and stores them in buffer with aiohttp on asyncio context.
 + responds to user inquiries of get().
@@ -37,7 +36,8 @@ callback|func||function called from _listen()  periodically.|None
 done_callback|func||function called when listener ends.|None
 exception_handler|func||function called when exceptions occur.|None
 direct_mode|bool| |If True, invoke specified callback function without using buffer.|False
-
+seektime|int| |start position of fetching chat (seconds). This option is valid for archived chat only. If negative value, fetches chatdata which is posted before start broadcasting.|0
+force_replay|bool| |force to fetch archived chat data, even if specified video is live.|False
 ## await get()
 description|return value
 ---|---
