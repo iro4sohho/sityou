@@ -1,5 +1,9 @@
-#### Warning : ReplayChatAsync is deprecated and will be integrated with LiveChatAsync.
-ReplayChatAsync object 
+#### Warning : <br>
+#### ReplayChatAsync is deprecated and will be removed by v0.0.5.0. <br>
+#### This feature is already integrated into [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync).
+<br>
+
+
 + fetches past chat data of archived videos and stores them in buffer with aiohttp on asyncio context.
 + responds to user inquiries of get().
 + invokes callback function with processed chat data.
