@@ -5,6 +5,7 @@ pytchatには組み込みのChatProcessorとして以下のクラスを同梱し
 + [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor) ： チャットデータへのアクセスを容易に行うための標準的なProcessor
 + CompatibleProcessor　： Youtube APIが返すjsonデータと互換性のあるProcessor
 + JsonfileArchiveProcessor　：　チャットデータを辞書形式でファイルに保存するProcessor
++ [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator)　：　チャットの勢いを算出するProcessor
 
 
 
@@ -20,7 +21,7 @@ chat = LiveChat("video_id", processor = MyProcessor())
 <br>
 <br>
 
-ChatProcessorを複数使用する場合は、タプルで指定します。
+ChatProcessorを複数使用する場合は、タプルで指定します。（[詳細](Multiple-chat-processors)）
 
 ```python
 chat = LiveChat("video_id", processor = Processor1(), Processor2())
