@@ -4,7 +4,7 @@ DefaultProcessor object
 ```python
 chat = LiveChat("xxxxxxxxxxx") #video_id
 
-while True:
+while chat.is_alive():
     data = chat.get() #get processed data.
     items = data.items()
     for c in items:
