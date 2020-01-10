@@ -1,9 +1,8 @@
-#### planning to integrate ReplayChat into LiveChat
 LiveChat object 
 + fetches chat data and stores them in buffer with ThreadpoolExecutor
 + responds to user inquiries of get().
 + invokes callback function with processed chat data.
-+ can replay archived chat data.
++ can replay archived chat data (when specified  video is not live broadcasting).
 ## Usage
 ```
 from pytchat import LiveChat
