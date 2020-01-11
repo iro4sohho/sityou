@@ -21,7 +21,7 @@ chat = LiveChat("video_id", processor = MyProcessor())
 <br>
 <br>
 
-ChatProcessorを複数使用する場合は、タプルで指定します。（[詳細](Multiple-chat-processors)）
+ChatProcessorを複数使用する場合は、[タプルで指定します](複数のChat-Processorを同時に使用する)。
 
 ```python
 chat = LiveChat("video_id", processor = Processor1(), Processor2())
