@@ -2,7 +2,6 @@ You can use multiple chat processors simultaneously,<br>
 <br>
 by specifying chat processors as **tuple**.<br>
 <br>
-複数のChat Processorを使用する場合は、タプルで指定します。
 
 ```python
 chat = LiveChat("video_id", processor = (DefaultProcessor(), SpeedCalculator()) )
@@ -11,7 +10,7 @@ chat = LiveChat("video_id", processor = (DefaultProcessor(), SpeedCalculator()) 
 <br><br>
 The return values are also tuple.<br>
 <br>
-各々のprocessorの戻り値（加工後データ）は、タブルで受け取ります。<br>
+
 ```python
 data, speed = chat.get()
 ```
