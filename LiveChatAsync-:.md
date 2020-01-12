@@ -34,7 +34,7 @@ buffer|buffer||チャットデータを蓄積するバッファ|Buffer(maxsize=2
 interruptable|bool||Ctrl+Cでチャット取得を停止するか否か|True
 callback|func||一定間隔でチャットデータを渡す関数|None
 done_callback|func||チャット取得終了時に呼び出す関数|None
-direct_mode|bool| |Trueを指定した場合、bufferを使用しません|False
+direct_mode|bool| |Trueの場合、bufferを使用しません。このパラメータをTrueにする場合、callbackにも任意の関数を指定する必要があります。|False
 seektime|int| |チャットリプレイの開始時間(秒)。アーカイブチャットのリプレイ時のみ有効。負の数を指定した場合、配信開始前に流れていたチャット（一部）を取得します（アーカイブされているデータのみ）。|0
 force_replay|bool| |指定した動画IDがライブ状態であっても、強制的にアーカイブされたチャットを取得します。|False
 ## _await_  get()
