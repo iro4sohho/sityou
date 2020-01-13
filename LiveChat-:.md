@@ -6,17 +6,47 @@ LiveChat オブジェクト
 （指定した動画がアーカイブ済みの場合、自動的にリプレイモードになります）
 
 ## 使用例
+#### on-demand モード
+任意のタイミングでget()を呼び出し、bufferに蓄積されたチャットデータを取得します。
 ```python
 from pytchat import LiveChat
-chat = LiveChat(video_id = "gb01h_eT0pw")
+livechat = LiveChat(video_id = "Zvp1pJpie4I")
 
-while chat.is_alive():
-    data = chat.get()
-    items = data.items()
-    for c in items:
-        print(c.author.name, c.message)
-        data.tick()
+while livechat.is_alive():
+  try:
+    chatdata = livechat.get()
+    for c in chatdata.items:
+        print(f"{c.datetime} [{c.author.name}]- {c.message}")
+        chatdata.tick()
+  except KeyboardInterrupt:
+    livechat.terminate()
+    break
 ```
+
+#### callback モード（推奨）
+バックグラウンドで定期的に、callbackに指定した関数にチャットデータを渡します。
+（※calllbackモードのときは、get()を使用できません）
+```python
+from pytchat import LiveChat
+import time
+
+def disp(chatdata):
+    for c in chatdata.items:
+        print(f"{c.datetime} [{c.author.name}]- {c.message}")
+        chatdata.tick()
+
+def main():
+  livechat = LiveChat(video_id = "Zvp1pJpie4I", callback = disp)
+  while livechat.is_alive():
+    #バックグラウンドで行う処理をここに書きます。
+    time.sleep(1)
+  livechat.terminate()
+
+if __name__ == '__main__':
+  main()
+```
+
+
 ## #コンストラクタで指定可能なパラメータ一覧
 
 パラメータ名|型|必須|備考|規定値
