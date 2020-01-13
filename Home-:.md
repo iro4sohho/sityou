@@ -2,11 +2,23 @@
 ### pytchat - YouTubeのチャットを取得するための軽量pythonライブラリ。
 <br>
 
+## インストール
+
+```
+pip install pytchat
+```
+
+## アップグレード
+
+```
+pip install --upgrade pytchat
+```
+
 ## API
  * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat-:)
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync-:)
- * [ReplayChat](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChat)　*deprecated
- * [ReplayChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChatAsync) *deprecated
+ * [ReplayChat](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChat)　*廃止予定（LiveChatに統合）
+ * [ReplayChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChatAsync) *廃止予定（LiveChatに統合）
 ## Chat Processor
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor-:)
  * CompatibleProcessor
