@@ -24,7 +24,8 @@ while livechat.is_alive():
 ```
 
 #### callback モード（推奨）
-バックグラウンドでcallbackに指定した関数にチャットデータを渡します。
+パラメータcallbackに任意の関数を指定することでcallbackモードになります。
+バックグラウンドで指定した関数にチャットデータを渡します。
 （※calllbackモードのときは、get()を使用できません）
 ```python
 from pytchat import LiveChat
