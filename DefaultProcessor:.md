@@ -27,7 +27,7 @@ description|
 ## _await_ 　tick_async()
 description|
 ---|
-（LiveChatAsync使用時のみ有効）次のチャットが表示されるまで待ちます。この関数はノンブロッキングで呼び出し可能です。|
+（LiveChatAsync使用時のみ有効）次のチャットが表示されるまで待ちます。この関数はawaitをつけて呼び出さなければなりません。|
 
 
 ## #チャットデータ
