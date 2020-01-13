@@ -7,10 +7,11 @@ LiveChatAsync オブジェクト
 ## 使用例
 ```python
 from pytchat import LiveChatAsync
+from concurrent.futures import CancelledError
 import asyncio
 
 async def main():
-  livechat = LiveChatAsync("G1w62uEMZ74", callback = func)
+  livechat = LiveChatAsync("Zvp1pJpie4I", callback = func)
   while livechat.is_alive():
     await asyncio.sleep(3)
     #チャットの取得と並行で行いたい処理をここに書きます。
@@ -22,8 +23,12 @@ async def func(chatdata):
     print(f"{c.datetime} [{c.author.name}]-{c.message} {c.amountString}")
     await chatdata.tick_async()
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+if __name__=='__main__':
+  try:
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())
+  except CancelledError:
+    pass
 ```
 ## コンストラクタで指定可能なパラメータ一覧
 
