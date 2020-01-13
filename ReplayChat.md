@@ -1,5 +1,5 @@
 #### Warning : <br>
-#### ReplayChat is deprecated and will be removed by v0.0.5.0. <br>
+#### ReplayChat is deprecated and will be removed. <br>
 #### This feature is already integrated into [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat) 
 <br>
 
