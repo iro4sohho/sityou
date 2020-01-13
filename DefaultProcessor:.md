@@ -144,7 +144,7 @@ description|
   <tr>
     <td>isChatSponsor</td>
     <td>bool</td>
-    <td>メンバーシップ加入者</td>
+    <td>メンバーシップ加入者(※スパチャデータの場合、メンバーか否かにかかわらず常にFalse)</td>
   </tr>
   <tr>
     <td>isChatModerator</td>
