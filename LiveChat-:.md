@@ -1,12 +1,14 @@
 LiveChat オブジェクト
-+ ThreadpoolExecutorを使用してバックグラウンドでライブチャットデータを監視・自動取得し、bufferにデータを蓄積します。
++ バックグラウンドでライブチャットデータを監視・自動取得し、bufferにデータを蓄積します。
 + 任意のタイミングでget()関数を使用し、bufferに蓄積されているチャットデータを取得できます。
 + callbackパラメータに任意の関数を指定することで、バックグラウンドでライブチャットデータを指定した関数に渡すことができます。
-+ アーカイブ済み動画のチャットのリプレイにも対応しています。
++ アーカイブ済み動画のチャットのリプレイにも対応しています。<br>
+（指定した動画がアーカイブ済みの場合、自動的にリプレイモードになります）
+
 ## 使用例
 ```
 from pytchat import LiveChat
-chat = LiveChat("gb01h_eT0pw")
+chat = LiveChat(video_id = "gb01h_eT0pw")
 
 while chat.is_alive():
     data = chat.get()
