@@ -9,12 +9,12 @@ chat = LiveChat("xxxxxxxxxxx") #video_id
 #chat = LiveChat("xxxxxxxxxxx", processor = DefaultProcessor()) と同義。
 while chat.is_alive():
     data = chat.get() #get processed data.
-    items = data.items()
+    items = data.items
     for c in items:
-        print(c.author.name, c.message)
+        print(f"{c.datetime} [{c.author.name}]-{c.message} -{c.amountString}")
         data.tick()
 ```
-## items()
+## items
 description|return value
 ---|---
 [チャットデータ](#チャットデータ)のリストを取得します。|チャットデータのリスト
