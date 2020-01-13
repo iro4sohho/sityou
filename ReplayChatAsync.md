@@ -1,5 +1,5 @@
 #### Warning : 
-#### ReplayChatAsync is deprecated and will be removed by v0.0.5.0.
+#### ReplayChatAsync is deprecated and will be removed.
 #### This feature is already integrated into [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync).
 <br>
 
