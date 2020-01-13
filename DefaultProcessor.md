@@ -141,7 +141,7 @@ Members of author object.
   <tr>
     <td>isChatSponsor</td>
     <td>bool</td>
-    <td></td>
+    <td>when the chat is superchat/supersticker, always False</td>
   </tr>
   <tr>
     <td>isChatModerator</td>
