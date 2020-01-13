@@ -3,15 +3,15 @@
 <br>
 
 ## API
- * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat)
- * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync)
+ * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat-:)
+ * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync-:)
  * [ReplayChat](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChat)　*deprecated
  * [ReplayChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChatAsync) *deprecated
 ## Chat Processor
- * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor)
+ * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor-:)
  * CompatibleProcessor
  * JsonfileArchiveProcessor
- * [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator)
+ * [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator-:)
 
 [pytchatについて](https://github.com/taizan-hokuto/pytchat/wiki/feature)<br>
 [pytchatの動作モードについて](https://github.com/taizan-hokuto/pytchat/wiki/pytchat%E3%81%AE%E5%8B%95%E4%BD%9C%E3%83%A2%E3%83%BC%E3%83%89)
