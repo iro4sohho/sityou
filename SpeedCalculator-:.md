@@ -1,5 +1,3 @@
-SpeedCalculator object
-
 SpeedCalculatorはチャットの勢いを算出するChatProcessorです。<br>
 
 ### on-demand モードでの使用例
