@@ -10,17 +10,17 @@ from pytchat import LiveChatAsync
 import asyncio
 
 async def main():
-  chat = LiveChatAsync("G1w62uEMZ74", callback = func)
-  while chat.is_alive():
+  livechat = LiveChatAsync("G1w62uEMZ74", callback = func)
+  while livechat.is_alive():
     await asyncio.sleep(3)
     #チャットの取得と並行で行いたい処理をここに書きます。
 
 #callbackに指定した関数は、バックグラウンドで自動的かつ定期的に呼び出されます。
 #引数に、ChatProcessorによって加工されたチャットデータが渡されます。
-async def func(data):
-  for c in data.items:
+async def func(chatdata):
+  for c in chatdata.items:
     print(f"{c.datetime} [{c.author.name}]-{c.message} {c.amountString}")
-    await data.tick_async()
+    await chatdata.tick_async()
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
