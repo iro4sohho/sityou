@@ -1,5 +1,5 @@
 ![PYTCHAT LOGO](https://taizan-hokuto.github.io/statics/LOGO.png) 
-### pytchat - YouTubeのチャットを取得するための軽量pythonライブラリ。
+### pytchat - YouTubeチャットを取得するための軽量pythonライブラリ。
 <br>
 
 ## インストール
