@@ -1,6 +1,6 @@
 SpeedCalculator object
 + calculates speed of chatdata (per minute).<br><br>
-SpeedCalculatorはチャットの勢いを算出するChatProcessorです。<br>
+
 ### Usage
 ### on-demand style
 ```python
