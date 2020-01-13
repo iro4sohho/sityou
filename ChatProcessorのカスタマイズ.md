@@ -1,11 +1,11 @@
-ChatProcessorは、LiveChatオブジェクトから定型的なデータ（[chat_components](https://github.com/taizan-hokuto/pytchat/wiki/chat_component-:)：後述）を受け取り、<br>
+ChatProcessorは、LiveChatオブジェクトから定型的なデータ（[chat_components](https://github.com/taizan-hokuto/pytchat/wiki/chat_component:)：後述）を受け取り、<br>
 任意の形式に加工したデータを返すオブジェクトです。
 
 pytchatには組み込みのChatProcessorとして以下のクラスを同梱しています。
-+ [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor-:) ： チャットデータへのアクセスを容易に行うための標準的なProcessor
++ [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor:) ： チャットデータへのアクセスを容易に行うための標準的なProcessor
 + CompatibleProcessor　： Youtube APIが返すjsonデータと互換性のあるProcessor
 + JsonfileArchiveProcessor　：　チャットデータを辞書形式でファイルに保存するProcessor
-+ [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator-:)　：　チャットの勢いを算出するProcessor
++ [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator:)　：　チャットの勢いを算出するProcessor
 
 
 
