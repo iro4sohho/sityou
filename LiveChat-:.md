@@ -6,7 +6,7 @@ LiveChat オブジェクト
 （指定した動画がアーカイブ済みの場合、自動的にリプレイモードになります）
 
 ## 使用例
-```
+```python
 from pytchat import LiveChat
 chat = LiveChat(video_id = "gb01h_eT0pw")
 
@@ -22,7 +22,7 @@ while chat.is_alive():
 パラメータ名|型|必須|備考|規定値
 ---|---|---|---|---
 video_id|str|*|動画ID (`https://www.youtube.com/watch?v=xxx`　の「xxx」の部分)|-
-processor|ChatProcessor||チャットを加工するオブジェクト|DefaultProcessor
+processor|ChatProcessor||チャットを加工するオブジェクト|[DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor-:)
 buffer|buffer||チャットデータを蓄積するバッファ|Buffer(maxsize=20)
 interruptable|bool||Ctrl+Cでチャット取得を停止するか否か|True
 callback|func||一定間隔でチャットデータを渡す関数|None
