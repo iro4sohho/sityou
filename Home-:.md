@@ -8,7 +8,7 @@
 pip install pytchat
 ```
 
-## アップグレード
+## 最新版へのアップグレード
 
 ```
 pip install --upgrade pytchat
