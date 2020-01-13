@@ -16,7 +16,7 @@ pip install --upgrade pytchat
  * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat-:)
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync-:)
  * [ReplayChat](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChat)　*廃止予定（LiveChatに統合）
- * [ReplayChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChatAsync) *廃止予定（LiveChatに統合）
+ * [ReplayChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChatAsync) *廃止予定（LiveChatAsyncに統合）
 ## Chat Processor
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor-:)
  * CompatibleProcessor
