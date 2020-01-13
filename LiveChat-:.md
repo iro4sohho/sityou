@@ -30,17 +30,20 @@ while livechat.is_alive():
 from pytchat import LiveChat
 import time
 
-def disp(chatdata):
-    for c in chatdata.items:
-        print(f"{c.datetime} [{c.author.name}]- {c.message}")
-        chatdata.tick()
-
 def main():
   livechat = LiveChat(video_id = "Zvp1pJpie4I", callback = disp)
   while livechat.is_alive():
     #バックグラウンドで行う処理をここに書きます。
     time.sleep(1)
   livechat.terminate()
+
+#callbackパラメータに指定した関数。
+#バックグラウンドで定期的/自動的に呼ばれ、引数にチャットデータが渡されます。
+def disp(chatdata):
+    for c in chatdata.items:
+        print(f"{c.datetime} [{c.author.name}]- {c.message}")
+        chatdata.tick()
+
 
 if __name__ == '__main__':
   main()
