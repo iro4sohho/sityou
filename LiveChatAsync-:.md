@@ -13,9 +13,10 @@ async def main():
   chat = LiveChatAsync("G1w62uEMZ74", callback = func)
   while chat.is_alive():
     await asyncio.sleep(3)
-    #other background operation.
+    #チャット取得と独立並行で行いたい処理を書くことができます。
 
-#callback function is automatically called periodically.
+#callbackに指定した関数は、バックグラウンドで自動的かつ定期的に呼び出されます。
+#引数に、ChatProcessorによって加工されたチャットデータが渡されます。
 async def func(data):
   for c in data.items:
     print(f"{c.datetime} [{c.author.name}]-{c.message} {c.amountString}")
