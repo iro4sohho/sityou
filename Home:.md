@@ -28,7 +28,7 @@ pip install --upgrade pytchat
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync:)
  * [ReplayChat](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChat)　*廃止予定（LiveChatに統合）
  * [ReplayChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChatAsync) *廃止予定（LiveChatAsyncに統合）
-## Chat Processor
+## Chat Processor（チャットデータを加工するための組み込みのクラス）
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor:)
  * CompatibleProcessor
  * JsonfileArchiveProcessor
