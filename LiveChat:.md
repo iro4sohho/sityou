@@ -68,6 +68,7 @@ topchat_only|bool| |Trueの場合、上位チャットのみを取得します�
 説明|戻り値
 ---|---
 チャットデータをbufferから取得します。|ChatProcessorによって加工されたチャットデータ
+（※calllbackパラメータ関数を指定している場合は、get()を使用できません）
 
 ## is_alive()
 <table>
