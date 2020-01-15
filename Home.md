@@ -1,8 +1,5 @@
-[日本語版wikiへ](https://github.com/taizan-hokuto/pytchat/wiki/Home:)
-<br>
 
-![PYTCHAT LOGO](https://taizan-hokuto.github.io/statics/LOGO.png) 
-
+<img src="https://taizan-hokuto.github.io/statics/LOGO.png" width="400">
 <br>
 
 ### A python library for youtube livechat without YouTube API, Selenium or BeautifulSoup.
