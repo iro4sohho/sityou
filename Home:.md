@@ -1,5 +1,13 @@
-![PYTCHAT LOGO](https://taizan-hokuto.github.io/statics/LOGO.png) 
-#### pytchat - YouTube APIを使わずにチャットを取得するための軽量pythonライブラリ。
+<img src="https://taizan-hokuto.github.io/statics/LOGO.png" width="500">
+
+#### pytchatは、YouTube APIを使わずにチャットを取得するための軽量pythonライブラリです。
+
+＜主な特徴＞
++ ブラウザがチャットを取得するのと同じ仕組みで軽量にチャット取得。
++ Selenium等によるスクレイピングに頼らず、使用帯域を節約。
++ 取得したチャットデータを自由に加工するためのクラスを分離。
++ ライブ中のチャット、アーカイブ済み動画のチャットリプレイ両方に対応。
+
 <br>
 
 ## インストール
@@ -11,6 +19,9 @@ pip install pytchat
 ```
 pip install --upgrade pytchat
 ```
+
+## 動作DEMO
+![demo](https://taizan-hokuto.github.io/statics/demo.gif "demo")
 
 ## API
  * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat:)
