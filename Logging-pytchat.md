@@ -1,9 +1,11 @@
-## Logging example
 By default, outputs of logger are all invisible.<br>
 
 By setting logger parameter, you can use any customized logger.<br>
 
-Internal logger `config.logger` is also available.
+Internal logger `config.logger` is also available.<br>
+
+
+## Example
 
 ```python
 from pytchat import LiveChat, config, logging
