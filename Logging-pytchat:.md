@@ -15,7 +15,9 @@ LiveChat(video_id = "xxxxxxxxxxx",
 ## コード例
 
 ```python
-from pytchat import LiveChat, config, logging
+from pytchat import LiveChat, config
+import logging
+
 chat = LiveChat(video_id = "Zvp1pJpie4I", 
                 logger = config.logger(__name__, logging.DEBUG))
 
