@@ -43,6 +43,8 @@ done_callback|func||チャット取得終了時に呼び出す関数|None
 direct_mode|bool| |Trueの場合、bufferを使用しません。このパラメータをTrueにする場合、callbackにも任意の関数を指定する必要があります。|False
 seektime|int| |チャットリプレイの開始時間(秒)。アーカイブチャットのリプレイ時のみ有効。負の数を指定した場合、配信開始前に流れていたチャット（一部）を取得します（アーカイブされているデータのみ）。|0
 force_replay|bool| |指定した動画IDがライブ状態であっても、強制的にアーカイブされたチャットを取得します。|False
+[logger](https://github.com/taizan-hokuto/pytchat/wiki/Logging-pytchat:)|logging.Logger||ログ出力を取得する場合、任意のLoggerオブジェクトを設定します。|logging.NullHandler
+
 # 関数
 
 ## _await_  get()
