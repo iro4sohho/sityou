@@ -1,4 +1,5 @@
-LiveChat/LiveChatAsync オブジェクトのコンストラクタの logger パラメータに、任意のlogging.Loggerオブジェクトをセットしてpytchatのログ出力を取得することが可能です。<br>
+コンストラクタの logger パラメータに、任意の [Logger](https://docs.python.org/ja/3/library/logging.html) オブジェクトをセットして<br>
+pytchatのログ出力を取得することが可能です。<br>
 
 configをインポートすることで、内部で使用している `config.logger` も利用可能です.<br>
 
