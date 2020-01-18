@@ -1,13 +1,11 @@
-規定値ではロガーの出力は非表示になっています.<br>
-
-LiveChat/LiveChatAsync オブジェクトのコンストラクタの logger パラメータに、任意のlogging.Loggerオブジェクトをセットしてログ出力を取得することが可能です。<br>
+LiveChat/LiveChatAsync オブジェクトのコンストラクタの logger パラメータに、任意のlogging.Loggerオブジェクトをセットしてpytchatのログ出力を取得することが可能です。<br>
 
 configをインポートすることで、内部で使用している `config.logger` も利用可能です.<br>
 
 ```python
 from pytchat import config
 import logging
-LiveChat(video_id = "Zvp1pJpie4I", 
+LiveChat(video_id = "xxxxxxxxxxx", 
                 logger = config.logger(__name__, logging.DEBUG))
 ```
 
