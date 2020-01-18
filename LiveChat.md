@@ -33,6 +33,8 @@ direct_mode|bool| |If True, invoke specified callback function without using buf
 seektime|int| |start position of fetching chat (seconds). This option is valid for archived chat only. If negative value, fetches chatdata which is posted before start broadcasting.|0
 force_replay|bool| |force to fetch archived chat data, even if specified video is live.|False
 topchat_only|bool| |If True, get only top chat.|False
+logger|logging.Logger| |any Logger object|internal logger(set NullHandler)
+
 ## get()
 description|return value
 ---|---
@@ -48,3 +50,26 @@ description|return value
 ---|---
 Terminate fetching livechat.|-
 
+<br>
+<br>
+
+## Logging example
+By default, outputs of logger are all invisible.<br>
+By setting logger parameter, you can use any customized logger.<br>
+Internal logger `config.logger` is also available.
+```python
+from pytchat import LiveChat, config, logging
+chat = LiveChat(video_id = "Zvp1pJpie4I", 
+                logger = config.logger(__name__, logging.DEBUG))
+
+while chat.is_alive():
+  try:
+    data = chat.get()
+    items = data.items
+    for c in items:
+        print(f"{c.datetime} [{c.author.name}]- {c.message}")
+        data.tick()
+  except KeyboardInterrupt:
+    chat.terminate()
+    break
+```
