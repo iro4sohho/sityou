@@ -6,22 +6,27 @@ LiveChatAsync object
 ## Usage
 ```python
 from pytchat import LiveChatAsync
+from concurrent.futures import CancelledError
 import asyncio
 
 async def main():
-  chat = LiveChatAsync("G1w62uEMZ74", callback = func)
-  while chat.is_alive():
+  livechat = LiveChatAsync("Zvp1pJpie4I", callback = func)
+  while livechat.is_alive():
     await asyncio.sleep(3)
     #other background operation.
 
 #callback function is automatically called periodically.
-async def func(data):
-  for c in data.items:
+async def func(chatdata):
+  for c in chatdata.items:
     print(f"{c.datetime} [{c.author.name}]-{c.message} {c.amountString}")
-    await data.tick_async()
+    await chatdata.tick_async()
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+if __name__=='__main__':
+  try:
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())
+  except CancelledError:
+    pass
 
 ```
 ## #constructor params
@@ -49,8 +54,15 @@ description|return value
 ---|---
 Check if livechat stream is alive.|bool
 
+## pause()
+pause fetching chat (*callback mode only)|
+
+
+## resume()
+resume fetching chat (*callback mode only)|
+
+
+
 ## terminate()
-description|return value
----|---
-Terminate fetching livechat.|-
+Terminate fetching livechat.
 
