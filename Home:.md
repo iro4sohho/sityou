@@ -4,12 +4,10 @@
 
 #### pytchatは、YouTube APIを使わずにチャットを取得するための軽量pythonライブラリです。
 
-＜主な特徴＞
-+ ブラウザがチャットを取得するのと同じ仕組みで軽量にチャット取得。
-+ Selenium等によるスクレイピングに頼らず、使用帯域を節約。
-+ 取得したチャットデータを自由に加工するためのクラスを分離。
-+ ライブ中のチャット、アーカイブ済み動画のチャットリプレイ両方に対応。
-
+＜できること＞
++ YouTube APIを使用せずにYouTubeのライブチャットを取得。
++ アーカイブされたチャットのリプレイ。
++ 
 <br>
 
 ## インストール
@@ -26,10 +24,9 @@ pip install --upgrade pytchat
 ![demo](https://taizan-hokuto.github.io/statics/demo.gif "demo")
 
 ## API
- * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat:)
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync:)
- * [ReplayChat](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChat)　*廃止予定（LiveChatに統合）
- * [ReplayChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChatAsync) *廃止予定（LiveChatAsyncに統合）
+ * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat:)
+
 ## Chat Processor（チャットデータを加工するための組み込みのクラス）
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor:)
  * CompatibleProcessor
