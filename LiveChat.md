@@ -27,7 +27,7 @@ video_id|str|*|ID of youtube video.|-
 processor|ChatProcessor|||DefaultProcessor
 buffer|Buffer||buffer of chat data fetched background.|Buffer(maxsize=20)
 interruptable|bool|||True
-callback|func||function called from _listen() periodically.|None
+callback|func||function called periodically.|None
 done_callback|func||function called when listener ends.|None
 direct_mode|bool| |If True, invoke specified callback function without using buffer.|False
 seektime|int| |start position of fetching chat (seconds). This option is valid for archived chat only. If negative value, fetches chatdata which is posted before start broadcasting.|0
@@ -39,6 +39,8 @@ topchat_only|bool| |If True, get only top chat.|False
 description|return value
 ---|---
 Get processed chat data from buffer.|processed chat data
+
+*When callback parameter is set, get() function is not available. (Illegal function call occurs.)
 
 ## is_alive()
 description|return value
