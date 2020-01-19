@@ -1,5 +1,3 @@
-DefaultProcessorは、YouTubeのチャットデータを容易に取り扱うためのChatProcessorです。
-<br>
 <br>
 pytchatでは、processorパラメータに何も指定しない場合、このDefaultProcessorによって加工されたチャットデータが返されます。<br>
 
