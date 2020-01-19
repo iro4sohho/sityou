@@ -51,7 +51,7 @@ force_replay|bool| |指定した動画IDがライブ状態であっても、強�
 ---|---
 チャットデータをbufferから取得します。|ChatProcessorによって加工されたチャットデータ
 
-※callbackモードに関数を指定している場合、get()は使用できません（IllegalFunctionCall例外が発生します）
+※callbackパラメータに関数を指定している場合、get()は使用できません（IllegalFunctionCall例外が発生します）
 
 ## is_alive()
 <table>
