@@ -7,10 +7,9 @@
 
 
 ## API
- * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat)
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync)
- * [ReplayChat](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChat)　*deprecated
- * [ReplayChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/ReplayChatAsync) *deprecated
+ * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat)
+
 ## Chat Processor
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor)
  * CompatibleProcessor
