@@ -55,14 +55,14 @@ description|return value
 Check if livechat stream is alive.|bool
 
 ## pause()
-pause fetching chat (*callback mode only)|
+pause fetching chat (*callback mode only)
 
 
 ## resume()
-resume fetching chat (*callback mode only)|
+resume fetching chat (*callback mode only)
 
 
 
 ## terminate()
-Terminate fetching livechat.
+Terminate pytchat.
 
