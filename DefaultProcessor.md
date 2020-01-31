@@ -6,7 +6,7 @@ chat = LiveChat("xxxxxxxxxxx") #video_id
 
 while chat.is_alive():
     data = chat.get() #get processed data.
-    items = data.items()
+    items = data.items
     for c in items:
         print(c.author.name, c.message)
         data.tick()
