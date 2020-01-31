@@ -11,7 +11,7 @@ while chat.is_alive():
         print(c.author.name, c.message)
         data.tick()
 ```
-## items()
+## items
 description|return value
 ---|---
 Get list of [chat items](#members-of-chat-item).|List of chat items
