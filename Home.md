@@ -1,4 +1,4 @@
-[日本語版wikiへ](https://github.com/taizan-hokuto/pytchat/wiki/Home:)
+[日本語版wikiへ](https://github.com/taizan-hokuto/pytchat/wiki/Home_jp)
 
 <img src="https://taizan-hokuto.github.io/statics/LOGO.png" width="400">
 <br>
