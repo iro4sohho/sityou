@@ -7,6 +7,9 @@ JsonfileArchiver
 
 If a file with the same name exists, it is automatically saved under a different name.
 
+### Return
+actual saved file path.
+
 ### Usage
 ```python
 import asyncio
