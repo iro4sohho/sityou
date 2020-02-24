@@ -13,7 +13,7 @@
 ## Chat Processor
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor)
  * CompatibleProcessor
- * [JsonfileArchiver](https://github.com/taizan-hokuto/pytchat/wiki/JsonfileArchiver)
+ * JsonfileArchiveProcessor
  * [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator)
 
 
