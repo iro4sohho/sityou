@@ -3,7 +3,7 @@ JsonfileArchiver
 
 ### Parameter
 
-#### savefilepath : str
+#### save_path : str
 
 If a file with the same name exists, it is automatically saved under a different name with sufffix '(number)'.
 
