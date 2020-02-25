@@ -24,8 +24,8 @@ video_id = "8PIe_F9MI80"
 async def main():
   chat = LiveChatAsync(　  
     video_id, 
-    callback=func,
-    processor =JsonfileArchiver("c:/temp/test.data")
+    callback = func,
+    processor = JsonfileArchiver("c:/temp/test.data")
   )
   while chat.is_alive():
     await asyncio.sleep(5)        
