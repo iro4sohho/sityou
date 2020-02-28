@@ -16,8 +16,21 @@ Extractorオブジェクトは、チャットを抽出します。
 ### processor
 抽出後の後処理を行う[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor)
 
+
+
+##
+
+
+## 関数
+### extract()
+抽出を開始します。
+
+### cancel()
+処理をキャンセルします。
+
+
 ## 使用例
-指定した動画IDのスパチャ合計額を集計する。<br>
+指定した動画IDのスパチャ合計額を集計する。(processor に SuperchatCalculatorを指定)<br>
 プログレスバー表示のため別途tqbmのインストールが必要。<br>
 `pip install tqbm`
 
