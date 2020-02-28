@@ -17,19 +17,21 @@ Default value: 1.<br>
 
 
 ### callback : function
-A function passed the progress data during download. <br>
-The chat data and the number of seconds (milliseconds) are passed. <br>
+A function to be passed the progress data during download: <br>
+the chat data and the number of milliseconds in the fetched data. <br>
 However, the number of seconds and chat data passed to callback function may overlap.
 
-### processor
+### processor : ChatProcessor
 [ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor) to process chat data after extracting.
 
 ## functions
 ### extract()
 Start to extract.
+Returns list of raw chat data or processed chat data.
+
 
 ### cancel()
-Cancell the process.
+Cancell extracting process.
 
 
 
