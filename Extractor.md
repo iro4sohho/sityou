@@ -14,6 +14,8 @@ the number of divisions to concurrent download.<br>
 From 1 to 10.<br>
 Default value: 1.<br>
 
+
+
 ### callback
 A function passed the progress data during download. <br>
 The chat data and the number of seconds (milliseconds) are passed. <br>
@@ -21,8 +23,6 @@ However, the number of seconds and chat data passed to callback function may ove
 
 ### processor
 [ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor) to process chat data after extracting.
-
-
 
 ## functions
 ### extract()
@@ -32,10 +32,13 @@ Start to extract.
 Cancell the process.
 
 
+
 ## Usage
 Aggregate the total amount of supoerchat.(processor : SuperchatCalculator)<br>
 Install tqdm to display progress bar.<br>
 `pip install tqbm`
+
+
 
 ```python
 from tqdm import tqdm
@@ -84,3 +87,4 @@ if __name__ == '__main__':
     pbar.close()
 
     print(result)
+```
