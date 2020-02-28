@@ -1,5 +1,5 @@
 ## Extractor object<br>
-+ extracts chatdata from video page.
++ extracts chat data from video.
 
 By specifying any ChatProcessor at processor parameter, you can process chat data after extraction.
 
