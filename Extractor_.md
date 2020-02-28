@@ -35,8 +35,8 @@ processorパラメータに任意のChatProcessorを指定することで、取�
 
 ## 使用例
 指定した動画IDのスパチャ合計額を集計する。(processor に SuperchatCalculatorを指定)<br>
-プログレスバー表示のため別途tqbmのインストールが必要。<br>
-`pip install tqbm`
+プログレスバー表示のため別途tqdmのインストールが必要。<br>
+`pip install tqdm`
 
 ```python
 from tqdm import tqdm
