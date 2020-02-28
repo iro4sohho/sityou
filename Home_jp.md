@@ -30,7 +30,7 @@ pip install --upgrade pytchat
 ## Chat Processor（チャットデータを加工するための組み込みのクラス）
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor:)
  * CompatibleProcessor
- * JsonfileArchiveProcessor
+ * [JsonfileArchiver](https://github.com/taizan-hokuto/pytchat/wiki/JsonfileArchiver_)
  * [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator:)
 
 [pytchatについて](https://github.com/taizan-hokuto/pytchat/wiki/feature)<br>
