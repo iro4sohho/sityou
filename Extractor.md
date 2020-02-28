@@ -6,17 +6,17 @@ By specifying any ChatProcessor at processor parameter, you can process chat dat
 *Due to YouTube specifications, not all chat data can be extracted. <br> (Omission may occur for some videos with high chat speed) <br> Also, the chat data fetched may change depending on the number of divisions specified `div` parameter.
 
 ## Parameters
-### video_id
+### video_id : str
 video id
 
-### div
+### div : int
 the number of divisions to download concurrently.<br>
 From 1 to 10.<br>
 Default value: 1.<br>
 
 
 
-### callback
+### callback : function
 A function passed the progress data during download. <br>
 The chat data and the number of seconds (milliseconds) are passed. <br>
 However, the number of seconds and chat data passed to callback function may overlap.
