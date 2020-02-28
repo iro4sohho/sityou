@@ -34,11 +34,11 @@ Returns list of raw chat data or processed chat data.
 Cancell extracting process.
 
 
+<br>
 
-## Usage
-Aggregate the total amount of supoerchat.(processor : SuperchatCalculator)<br>
-Install tqdm to display progress bar.<br>
-`pip install tqbm`
+## Example
+Aggregate the total amount of superchat for each currency.(processor : SuperchatCalculator)<br>
+Requires tqdm to display progress bar.(`pip install tqdm`)
 
 
 
