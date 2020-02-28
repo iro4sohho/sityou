@@ -10,7 +10,7 @@ By specifying any ChatProcessor at processor parameter, you can process chat dat
 video id
 
 ### div
-the number of divisions to concurrent download.<br>
+the number of divisions to download concurrently.<br>
 From 1 to 10.<br>
 Default value: 1.<br>
 
