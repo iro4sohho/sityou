@@ -1,4 +1,7 @@
-Extractorオブジェクトは、チャットを抽出します。
+Extractorオブジェクトは、チャットを抽出します。<br>
+
+※YouTubeの仕様上、必ずしもすべてのチャットデータを抽出できるとは限りません。<br>（チャット速度が大きい動画では取得漏れが生じることがあります）<br>またdivで指定した分割数によって取得されるチャットデータが変わることもあります。
+
 
 ## パラメータ
 ### video_id
@@ -16,9 +19,6 @@ Extractorオブジェクトは、チャットを抽出します。
 ### processor
 抽出後の後処理を行う[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor)
 
-
-
-##
 
 
 ## 関数
@@ -46,7 +46,8 @@ class ProgressBar:
     def __init__(self,total):
         self.total = total*1000
         self.pbar = tqdm(total = self.total, ncols = 80, unit_scale = 1,
-            bar_format='{desc}{percentage:3.1f}%|{bar}|[{n_fmt:>7}/{total_fmt}]{elapsed}<{remaining}')
+            bar_format='{desc}{percentage:3.1f}%|{bar}|'
+                       '[{n_fmt:>7}/{total_fmt}]{elapsed}<{remaining}')
         
     def callback(self, actions, fetched):
         if self.total - fetched < 0:
@@ -62,10 +63,11 @@ class ProgressBar:
         self.pbar.close()
 
 if __name__ == '__main__':
-    video_id = "vNOkOMjPA1s"
+    video_id = "GY-LSsYVpJ4"
     info  = VideoInfo(video_id)
- 
-   # プログレスバーを用意する。
+    print(info.get_title())    
+
+    # プログレスバーを用意する。
     pbar = ProgressBar(info.get_duration())
  
     # Extractorの生成
