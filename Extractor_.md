@@ -69,7 +69,7 @@ class ProgressBar:
 if __name__ == '__main__':
     video_id = "GY-LSsYVpJ4"
     info  = VideoInfo(video_id)
-    print(info.get_title())    
+    print('Calculate Superchat: [title] ', info.get_title())    
 
     # プログレスバーを用意する。
     pbar = ProgressBar(info.get_duration())
