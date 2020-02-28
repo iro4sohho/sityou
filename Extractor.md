@@ -5,7 +5,7 @@ By specifying any ChatProcessor at processor parameter, you can process chat dat
 
 *Due to YouTube specifications, not all chat data can be extracted. <br> (Omission may occur for some videos with high chat speed) <br> Also, the chat data fetched may change depending on the number of divisions specified `div` parameter.
 
-## パラメータ
+## Parameters
 ### video_id
 video id
 
@@ -24,12 +24,12 @@ However, the number of seconds and chat data passed to callback function may ove
 
 
 
-## 関数
+## functions
 ### extract()
 Start to extract.
 
 ### cancel()
-cancell the process/
+Cancell the process.
 
 
 ## Usage
