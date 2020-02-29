@@ -24,17 +24,17 @@ pip install --upgrade pytchat
 ![demo](https://taizan-hokuto.github.io/statics/demo.gif "demo")
 
 ## API
- * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync:)
- * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat:)
+ * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync_)
+ * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat_)
  * [Extractor](https://github.com/taizan-hokuto/pytchat/wiki/Extractor_)
  * [VideoInfo](https://github.com/taizan-hokuto/pytchat/wiki/VideoInfo_)
 
 ## Chat Processor（チャットデータを加工するための組み込みのクラス）
  * [SuperchatCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SuperchatCalculator_)
- * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor:)
+ * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor_)
  * CompatibleProcessor
  * [JsonfileArchiver](https://github.com/taizan-hokuto/pytchat/wiki/JsonfileArchiver_)
- * [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator:)
+ * [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator_)
 
 [pytchatについて](https://github.com/taizan-hokuto/pytchat/wiki/feature)<br>
 [pytchatの動作モードについて](https://github.com/taizan-hokuto/pytchat/wiki/pytchat%E3%81%AE%E5%8B%95%E4%BD%9C%E3%83%A2%E3%83%BC%E3%83%89)
