@@ -37,7 +37,7 @@ processorを指定しない場合：生のチャットデータ（actions）<br>
 処理をキャンセルします。
 
 
-## 使用例
+## Extractorの使用例
 指定した動画IDのスパチャ合計額を集計表示する。(processor に SuperchatCalculatorを指定)<br>
 プログレスバー表示のため別途tqdmのインストールが必要。<br>
 `pip install tqdm`
