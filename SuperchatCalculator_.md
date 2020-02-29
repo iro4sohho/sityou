@@ -86,9 +86,9 @@ if __name__ == '__main__':
     signal.signal(signal.SIGINT,  
         (lambda a, b: ex.cancel()))
 
-    #抽出の開始
+    #抽出の実行
     result = ex.extract()
-    pbar.close()
 
     #集計結果の表示
+    pbar.close()
     print(result)
