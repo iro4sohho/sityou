@@ -18,7 +18,8 @@ Default value: 1, maximum value is 10.<br>
 ### callback : function
 A function to be passed the progress data during download: <br>
 the chat data and the number of milliseconds in the fetched data. <br>
-However, the number of seconds and chat data passed to callback function may overlap.
+However, there may be overlap between the chat data passed to the callback function. 
+So, the data passed to this `callback` parameter should be used to only track download progress.
 
 ### processor : ChatProcessor
 [ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor) to process chat data after extracting.
