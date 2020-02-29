@@ -5,13 +5,13 @@ VideoInfo は動画情報を取得するためのオブジェクトです。
 info  = VideoInfo(video_id = "fzI9FNjXQ0o")
 
 print("title:", info.get_title())
-print("channel", info.get_channel_name())
-print("duration", info.get_duration())
+print("channel name:", info.get_channel_name())
+print("duration:", info.get_duration())
 
 # 出力結果
-#> GitHub Arctic Code Vault
-#> GitHub
-#> 147
+#> title: GitHub Arctic Code Vault
+#> channel name: GitHub
+#> duration: 147
 
 ```
 
