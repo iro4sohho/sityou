@@ -26,8 +26,11 @@ pip install --upgrade pytchat
 ## API
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync:)
  * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat:)
+ * [Extractor](https://github.com/taizan-hokuto/pytchat/wiki/Extractor_)
+ * [VideoInfo](https://github.com/taizan-hokuto/pytchat/wiki/VideoInfo_)
 
 ## Chat Processor（チャットデータを加工するための組み込みのクラス）
+ * [SuperchatCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SuperchatCalculator_)
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor:)
  * CompatibleProcessor
  * [JsonfileArchiver](https://github.com/taizan-hokuto/pytchat/wiki/JsonfileArchiver_)
