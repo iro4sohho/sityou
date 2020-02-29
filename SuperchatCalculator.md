@@ -1,5 +1,5 @@
 ## SuperchatCalculator
-+ aggregates the amount of SuperChat for each currency.
++ aggregates the amount of Superchat for each currency.
 
 ### Returns
 dict<br> { currency_symbol : amount }<br>
