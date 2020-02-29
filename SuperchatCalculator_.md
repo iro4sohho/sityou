@@ -18,7 +18,7 @@ video_id = "_i_AxXSfceM"
 
 async def main():
     chat = LiveChatAsync(video_id, callback = display,
-           processor = DefaultProcessor(), SuperchatCalculator() )
+           processor = (DefaultProcessor(), SuperchatCalculator()) )
     while chat.is_alive():
         await asyncio.sleep(3)        
  
