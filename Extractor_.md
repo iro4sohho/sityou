@@ -28,7 +28,7 @@ processorパラメータに任意の[ChatProcessor]を指定することで、�
 ### extract()
 抽出を開始します。
 <br>
-### 戻り値
+#### 戻り値
 processorにChatProcessorを指定する場合：ChatProcessorによって加工されたデータ<br>
 processorを指定しない場合：生のチャットデータ（actions）<br>
 <br>
