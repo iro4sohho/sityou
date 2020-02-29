@@ -1,4 +1,4 @@
-Extractor object extracts chat data.
+Extractor object extracts(downloads) chat data and can return processed data.
 
 By specifying any ChatProcessor at processor parameter, you can process chat data after extraction.
 
