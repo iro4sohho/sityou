@@ -34,7 +34,7 @@ processorパラメータに任意のChatProcessorを指定することで、取�
 
 
 ## 使用例
-指定した動画IDのスパチャ合計額を集計する。(processor に SuperchatCalculatorを指定)<br>
+指定した動画IDのスパチャ合計額を集計表示する。(processor に SuperchatCalculatorを指定)<br>
 プログレスバー表示のため別途tqdmのインストールが必要。<br>
 `pip install tqdm`
 
@@ -86,9 +86,10 @@ if __name__ == '__main__':
     signal.signal(signal.SIGINT,  
         (lambda a, b: ex.cancel()))
 
-    #抽出の開始
+    #抽出の実行
     result = ex.extract()
-    pbar.close()
 
     #集計結果の表示
+    pbar.close()
     print(result)
+```
