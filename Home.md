@@ -9,8 +9,6 @@
 ## API
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync)
  * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat)
-
-## Tool
  * [Extractor](https://github.com/taizan-hokuto/pytchat/wiki/Extractor)
  * [VideoInfo](https://github.com/taizan-hokuto/pytchat/wiki/VideoInfo)
 
