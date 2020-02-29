@@ -11,8 +11,7 @@ video id
 
 ### div : int
 the number of divisions to download concurrently.<br>
-From 1 to 10.<br>
-Default value: 1.<br>
+Default value: 1, maximum value is 10.<br>
 
 
 
