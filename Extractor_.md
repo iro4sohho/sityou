@@ -1,6 +1,6 @@
 Extractorは、チャットデータを抽出（ダウンロード）するためのオブジェクトです。<br>
 
-processorパラメータに任意の[ChatProcessor]を指定することで、取得後のチャットデータを加工できます。<br><br>
+processorパラメータに任意の[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor)を指定することで、取得後のチャットデータを加工できます。<br><br>
 
 
 
