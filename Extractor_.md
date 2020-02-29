@@ -1,6 +1,6 @@
-Extractorオブジェクトは、チャットを抽出します。<br>
+Extractorは、チャットを抽出するためのオブジェクトです。<br>
 
-processorパラメータに任意のChatProcessorを指定することで、取得後のチャットデータを加工できます。
+processorパラメータに任意の[ChatProcessor]を指定することで、取得後のチャットデータを加工できます。<br><br>
 
 
 
