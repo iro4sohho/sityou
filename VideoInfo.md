@@ -17,7 +17,7 @@ print("duration", info.get_duration())
 ## Parameter
 video_id : str
 
-##Exception
+## Exception
 ### InvalidVideoIdException :
 Occurs when video_id does not exist on YouTube.
 
