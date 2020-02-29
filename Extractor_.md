@@ -15,19 +15,23 @@ processorパラメータに任意の[ChatProcessor]を指定することで、�
 並行ダウンロードのための分割数。<br>
 （1～10の整数。10を超える数を指定した場合であっても10で処理されます。）
 
-### callback
+### callback (省略可)
 ダウンロード中の途中経過データを渡す関数。<br>
 読み込んだチャットデータと、読み込んだチャットデータの秒数（ミリ秒）が渡されます。<br>
 ただし、callbackに渡される秒数およびチャットデータは一部重複する可能性があります。
 
-### processor
-抽出後の後処理を行う[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor)
-
+### processor (省略可)
+抽出後の後処理を行う[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor)<br>
 
 
 ## 関数
 ### extract()
 抽出を開始します。
+<br>
+### 戻り値
+processorにChatProcessorを指定する場合：ChatProcessorによって加工されたデータ<br>
+processorを指定しない場合：生のチャットデータ（actions）<br>
+<br>
 
 ### cancel()
 処理をキャンセルします。
