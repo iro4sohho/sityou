@@ -5,12 +5,12 @@ VideoInfo object retrieves YouTube video information.
 info  = VideoInfo(video_id = "fzI9FNjXQ0o")
 
 print("title:", info.get_title())
-print("channel", info.get_channel_name())
-print("duration", info.get_duration())
+print("channel name:", info.get_channel_name())
+print("duration:", info.get_duration())
 
-#> GitHub Arctic Code Vault
-#> GitHub
-#> 147
+#> title: GitHub Arctic Code Vault
+#> channel name: GitHub
+#> duration: 147
 
 ```
 
