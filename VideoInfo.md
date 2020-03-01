@@ -1,4 +1,4 @@
-VideoInfo object retrieves YouTube video informations from the video page.
+VideoInfo object retrieves YouTube video information from the video page.
 
 ## Usage
 ```python
