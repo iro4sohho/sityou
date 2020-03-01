@@ -18,7 +18,9 @@ processorパラメータに任意の[ChatProcessor](https://github.com/taizan-ho
 ### callback (省略可)
 ダウンロード中の途中経過データを渡す関数。<br>
 読み込んだチャットデータと、読み込んだチャットデータの秒数（ミリ秒）が渡されます。<br>
-ただし、callbackに渡される秒数およびチャットデータは一部重複する可能性があります。
+ただし、callbackに渡される秒数およびチャットデータは一部重複する可能性があります。<br>
+このため、callbackから渡されるデータはダウンロードの進捗状況を把握するためだけに利用することを推奨します。<br>
+
 
 ### processor (省略可)
 抽出後の後処理を行う[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor)<br>
