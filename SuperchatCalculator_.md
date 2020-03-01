@@ -23,7 +23,8 @@ async def main():
         await asyncio.sleep(3)        
  
 async def display(data, amount):
-    print(data.items[-1].elapsedTime, amount)
+    if len(data.items) > 0:
+        print(data.items[-1].elapsedTime, amount)
 
 if __name__ =='__main__':
     loop = asyncio.get_event_loop()
