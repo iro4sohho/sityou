@@ -21,7 +21,7 @@ However, there may be overlap between the chat data passed to the callback funct
 So, the data passed to this `callback` parameter should be used to only track download progress.
 
 ### processor : ChatProcessor
-[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor) to process chat data after extracting.
+[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor) to process chat data after extraction.
 
 ## functions
 ### extract()
