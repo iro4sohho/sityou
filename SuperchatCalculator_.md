@@ -35,7 +35,7 @@ if __name__ =='__main__':
 ```
 
 ### コード例２
-指定した動画IDのスパチャ合計額を集計表示する。(processor に SuperchatCalculatorを指定)<br>
+指定した動画IDのスパチャ合計額を集計表示する。(processor に SuperchatCalculatorを指定)<br>下記のコードで集計できるのはアーカイブされた動画のみ。<br>
 プログレスバー表示のため別途tqdmのインストールが必要。<br>
 `pip install tqdm`
 
