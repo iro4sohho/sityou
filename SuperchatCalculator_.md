@@ -7,7 +7,7 @@
 `{'￥': 170000.0, '$': 115.0, 'SEK\xa0': 90.0, 'PHP\xa0': 100.0, 'NT$': 30.0, 'R$': 5.0}`
 ### コード例１
 ```python
-'''一定間隔でその時点までの集計結果を表示。
+'''一定間隔でこのコードの実行開始時点以降の集計結果を表示。
 video_idはライブ中／アーカイブ済み両方可。'''
 import asyncio
 from concurrent.futures import CancelledError
