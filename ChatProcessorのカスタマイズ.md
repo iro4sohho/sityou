@@ -2,11 +2,11 @@ ChatProcessorは、LiveChatオブジェクトから定型的なデータ（[chat
 任意の形式に加工したデータを返すオブジェクトです。
 
 pytchatには組み込みのChatProcessorとして以下のクラスを同梱しています。
-+ [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor:) ： チャットデータへのアクセスを容易に行うための標準的なProcessor
++ [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor_) ： チャットデータへのアクセスを容易に行うための標準的なProcessor
 + CompatibleProcessor　： Youtube APIが返すJSONデータと互換性のあるProcessor
-+ JsonfileArchiveProcessor　：　チャットデータを辞書形式でファイルに保存するProcessor
-+ [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator:)　：　チャットの勢いを算出するProcessor
-
++ [JsonfileArchiver](https://github.com/taizan-hokuto/pytchat/wiki/JsonfileArchiver_)　：　チャットデータを１行ずつJSON形式でファイルに保存するProcessor
++ [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator_)　：　チャットの勢いを算出するProcessor
++ [SuperchatCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SuperchatCalculator_)　：　スーパーチャットの金額を集計するProcessor
 
 
 ## 拡張
@@ -21,7 +21,7 @@ chat = LiveChat("video_id", processor = MyProcessor())
 <br>
 <br>
 
-ChatProcessorを複数使用する場合は、[タプルで指定します](複数のChat-Processorを同時に使用する)。
+ChatProcessorを複数使用する場合は、[タプルで指定します](https://github.com/taizan-hokuto/pytchat/wiki/%E8%A4%87%E6%95%B0%E3%81%AEChat-Processor%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B)。
 
 ```python
 chat = LiveChat("video_id", processor = (Processor1(), Processor2()) )
