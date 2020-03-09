@@ -2,7 +2,7 @@
 <img src="https://taizan-hokuto.github.io/statics/LOGO.png" width="400">
 
 
-#### pytchatは、YouTube APIを使わずにチャットを取得するための軽量pythonライブラリです。
+#### pytchatは、YouTubeのチャットを取得するためのpythonライブラリです。
 
 ＜pytchatライブラリが提供する機能＞
 + YouTubeのライブチャットを取得。
