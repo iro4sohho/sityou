@@ -1,8 +1,8 @@
 LiveChatAsync object 
 + fetches chat data and stores them in buffer with aiohttp on asyncio context.
 + responds to user inquiries of get().
-+ invokes callback function with processed chat data.
-+ can replay archived chat data (when specified  video is not live broadcasting).
++ invokes a callback function with processed chat data.
++ can replay archived chat data (when the specified  video is not live broadcasting).
 ## Usage
 ```python
 from pytchat import LiveChatAsync
