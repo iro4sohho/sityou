@@ -35,8 +35,8 @@ if __name__ =='__main__':
 ```
 
 ### Example 2
-Aggregate the total amount of superchat for each currency.(using Extractor)<br>
-Requires tqdm to display progress bar.(`pip install tqdm`)
+Aggregate the total amount of superchat for each currency. (using Extractor)<br>
+Requires tqdm to display the progress bar. (`pip install tqdm`)
 <br>
 `pip install tqdm`
 <br>
