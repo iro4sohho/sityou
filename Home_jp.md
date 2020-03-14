@@ -35,7 +35,7 @@ pip install --upgrade pytchat
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor_)
  * CompatibleProcessor
  * [JsonfileArchiver](https://github.com/taizan-hokuto/pytchat/wiki/JsonfileArchiver_)
- * [HtmlArchiver](https://github.com/taizan-hokuto/pytchat/wiki/HtmlArchiver_)
+ * [HtmlArchiver](https://github.com/taizan-hokuto/pytchat/wiki/HTMLArchiver_)
  * [TSVArchiver](https://github.com/taizan-hokuto/pytchat/wiki/TSVArchiver_)
  * [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator_)
 
