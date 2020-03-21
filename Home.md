@@ -3,7 +3,7 @@
 <img src="https://taizan-hokuto.github.io/statics/LOGO.png" width="400">
 <br>
 
-### A python library for youtube livechat without YouTube API, Selenium or BeautifulSoup.
+### A lightweight python library to browse youtube livechat without Selenium or BeautifulSoup.
 
 
 ## API
