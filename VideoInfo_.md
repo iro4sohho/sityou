@@ -36,12 +36,12 @@ video_id : str<br>
 #### get_author_image() : str
 配信者のアイコン画像URL。<br>
 
-#### get_thumbnail : str
+#### get_thumbnail() : str
 動画のサムネイルURL。<br>
 
-#### get_channel_name : str
+#### get_channel_name() : str
 配信チャンネルのチャンネル名。<br>
 
-#### get_moving_thumbnail : str (*)<br>
+#### get_moving_thumbnail() : str (*)<br>
 動画のwebmサムネイルURL。
 
