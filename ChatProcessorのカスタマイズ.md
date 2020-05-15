@@ -1,4 +1,4 @@
-ChatProcessorは、LiveChatオブジェクトから定型的なデータ（[chat_components](https://github.com/taizan-hokuto/pytchat/wiki/chat_component:)：後述）を受け取り、<br>
+ChatProcessorは、LiveChatオブジェクトから定型的なデータ（[chat_components](https://github.com/taizan-hokuto/pytchat/wiki/chat_component_)：後述）を受け取り、<br>
 任意の形式に加工したデータを返すオブジェクトです。
 
 pytchatには組み込みのChatProcessorとして以下のクラスを同梱しています。
@@ -37,7 +37,7 @@ class MyProcessor:
         #...process chatdata...
 ```
 
-_chat_components_ は、video_id、timeout、chatdataをキーに持つ辞書([chat_component](https://github.com/taizan-hokuto/pytchat/wiki/chat_component-:))のリストです。
+_chat_components_ は、video_id、timeout、chatdataをキーに持つ辞書([chat_component](https://github.com/taizan-hokuto/pytchat/wiki/chat_component_:))のリストです。
 ```python
 chat_components:List[chat_component:dict]
 
