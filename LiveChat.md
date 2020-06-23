@@ -26,7 +26,7 @@ name|type|required|remarks|default value
 video_id|str|*|ID of youtube video.|-
 processor|ChatProcessor|||DefaultProcessor
 buffer|Buffer||buffer of chat data fetched background.|Buffer(maxsize=20)
-interruptable|bool||Allows keyboard interrupts. Set this parameter to False if your own threading program causes the problem.|True
+interruptable|bool||Allows keyboard interrupts. Set this parameter to `False` if your own threading program causes the problem.|True
 callback|func||function called periodically.|None
 done_callback|func||function called when listener ends.|None
 direct_mode|bool| |If True, invoke specified callback function without using buffer.|False
