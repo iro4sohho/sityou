@@ -16,6 +16,7 @@
  * [SuperchatCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SuperchatCalculator)
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor)
  * CompatibleProcessor
+ * [HTMLArchiver](https://github.com/taizan-hokuto/pytchat/wiki/HTMLArchiver)
  * [JsonfileArchiver](https://github.com/taizan-hokuto/pytchat/wiki/JsonfileArchiver)
  * [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator)
 
