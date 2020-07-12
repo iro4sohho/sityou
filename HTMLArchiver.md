@@ -5,7 +5,8 @@
 
 path for save file.
 
-## sample code
+## sample code 1
++ extract chat data from archived video.
 ```python
 from pytchat import HTMLArchiver, Extractor
 
@@ -18,4 +19,19 @@ ex = Extractor(
 
 ex.extract()
 print("finished.")
+```
+## sample code 2
++ archive live chat data
+```python
+import asyncio
+from pytchat import HTMLArchiver, LiveChatAsync
+
+video_id = "**********"
+async def main():
+    livechat = LiveChatAsync(video_id, processor=HTMLArchiver("v:/test.html"))
+    while livechat.is_alive():
+        await livechat.get()
+        await asyncio.sleep(1)
+
+asyncio.run(main())
 ```
