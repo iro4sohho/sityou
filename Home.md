@@ -17,6 +17,7 @@
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor)
  * CompatibleProcessor
  * [HTMLArchiver](https://github.com/taizan-hokuto/pytchat/wiki/HTMLArchiver)
+ * [TSVArchiver](https://github.com/taizan-hokuto/pytchat/wiki/TSVArchiver)
  * [JsonfileArchiver](https://github.com/taizan-hokuto/pytchat/wiki/JsonfileArchiver)
  * [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator)
 
