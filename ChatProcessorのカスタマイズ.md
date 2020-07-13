@@ -28,19 +28,17 @@ chat = LiveChat("video_id", processor = (Processor1(), Processor2()) )
 data1, data2 = chat.get()
 ```
 ## インタフェース
-
-ChatProcessorは、1個のリスト(chat_components)を引数にとる**process**という関数を持たなければなりません。
+### process(chat_components: List[chat_component])
+**process**関数は、chat_componentを要素とするリスト(chat_components)を引数にとります。
 
 ```python
 class MyProcessor:
-    def process(self, chat_components:List[dict]):
+    def process(self, chat_components):
         #...process chatdata...
 ```
 
-_chat_components_ は、video_id、timeout、chatdataをキーに持つ辞書([chat_component](https://github.com/taizan-hokuto/pytchat/wiki/chat_component_:))のリストです。
+chat_components の要素である [_chat_component_](https://github.com/taizan-hokuto/pytchat/wiki/chat_component_:) は、video_id、timeout、chatdataをキーに持つ辞書です。
 ```python
-chat_components:List[chat_component:dict]
-
 chat_component = {
     "video_id" : "xxxxxxxxxxx",  #動画ID
     "timeout"  : 7.5231,              #チャットデータのタイムアウト時間
@@ -50,4 +48,9 @@ chat_component = {
 
 chatdata は Youtubeから取得したjson形式のチャットデータをpython辞書形式に変換したものです。
 
+### finalize(*args, **kwargs)
+finalize関数は、チャット加工の終了処理を行うためのインターフェイスです。
+
+チャット取得が終了したとき（接続エラーもしくはCtrl+Cによる停止、他の例外発生による停止を含む）、LiveChat
+オブジェクトから呼び出されます。
 
