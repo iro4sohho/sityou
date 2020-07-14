@@ -1,4 +1,4 @@
-+ archives chat data as HTML file , with embedded custom emojis.
++ archives chat data as an HTML file, with embedded custom emojis.
 
 ## parameter
 + save_path : str
