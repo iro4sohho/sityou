@@ -8,3 +8,5 @@ ChatProcessor is object to process chatdata.
  * SimpleDisplayProcessor
  * [SpeedCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SpeedCalculator)
  * [SuperchatCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SuperchatCalculator)
+ * [TSVArchiver](https://github.com/taizan-hokuto/pytchat/wiki/TSVArchiver)
+ * [HTMLArchiver](https://github.com/taizan-hokuto/pytchat/wiki/HTMLArchiver)
