@@ -1,5 +1,4 @@
-DefaultProcessor object
-+ is a default chat processor of pytchat.
+DefaultProcessor is a default chat processor of pytchat.
 ### Usage
 ```python
 chat = LiveChat("xxxxxxxxxxx") #video_id
@@ -27,7 +26,7 @@ description|return value
 wait for next chat on asyncio context.|-
 
 
-## #Members of Chat Item
+## Attributes of Chat Item
 
 <table>
   <tr>
@@ -86,17 +85,22 @@ wait for next chat on asyncio context.|-
   </tr>
   <tr>
     <td>bgColor</td>
-    <td>int</td>
-    <td>RGB Int</td>
+    <td>int (ARGB)</td>
+    <td></td>
   </tr>
   <tr>
     <td>author</td>
     <td>object</td>
-    <td>see below</td>
+    <td>see <a href="#author">author</a></td>
+  </tr>  <tr>
+    <td>colors</td>
+    <td>object</td>
+    <td>see <a href="#colors">colors</a></td>
   </tr>
 </table>
 
-Members of author object.
+### author
+Attributes of author object.
 <table>
   <tr>
     <th>name</th>
@@ -147,5 +151,60 @@ Members of author object.
     <td>isChatModerator</td>
     <td>bool</td>
     <td></td>
+  </tr>
+</table>
+
+### colors
+Attributes of colors object.
+<table>
+  <tr>
+    <th>name</th>
+    <th>type</th>
+    <th>remarks</th>
+  </tr>
+  <tr>
+    <td>headerBackgroundColor</td>
+    <td>int (ARGB)</td>
+    <td>only type:`superChat`</td>
+  </tr>
+  <tr>
+    <td>headerTextColor</td>
+    <td>int (ARGB)</td>
+    <td>only type:`superChat`.</td>
+  </tr>
+  <tr>
+    <td>bodyBackgroundColor</td>
+    <td>int (ARGB)</td>
+    <td>only type:`superChat`. Same as `bgColor`.</td>
+  </tr>
+  <tr>
+    <td>bodyTextColor</td>
+    <td>int (ARGB)</td>
+    <td>only type:`superChat`</td>
+  </tr>
+  <tr>
+    <td>authorNameTextColor</td>
+    <td>int (ARGB)</td>
+    <td>only type:`superChat` and `superSticker`</td>
+  </tr>
+  <tr>
+    <td>backgroundColor</td>
+    <td>int (ARGB)</td>
+    <td>only type:`superSticker`</td>
+  </tr>
+  <tr>
+    <td>moneyChipBackgroundColor</td>
+    <td>int (ARGB)</td>
+    <td>only type:`superSticker`。Same as `bgColor`.</td>
+  </tr>
+  <tr>
+    <td>moneyChipTextColor</td>
+    <td>int (ARGB)</td>
+    <td>only type:`superSticker`</td>
+  </tr>
+  <tr>
+    <td>isChatModerator</td>
+    <td>int (ARGB)</td>
+    <td>only type:`superSticker`</td>
   </tr>
 </table>
