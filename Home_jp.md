@@ -2,7 +2,7 @@
 <img src="https://taizan-hokuto.github.io/statics/LOGO.png" width="400">
 
 
-#### pytchatは、YouTubeチャットを閲覧するための軽量pythonブラウザライブラリです。
+#### pytchatは、YouTubeチャットを閲覧するためのpythonライブラリです。
 
 ＜pytchatライブラリが提供する機能＞
 + YouTubeのライブチャットを閲覧。
