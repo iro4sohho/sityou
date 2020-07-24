@@ -37,7 +37,7 @@ class MyProcessor:
         #...process chatdata...
 ```
 
-chat_components の要素である [_chat_component_](https://github.com/taizan-hokuto/pytchat/wiki/chat_component_:) は、video_id、timeout、chatdataをキーに持つ辞書です。
+chat_components の要素である [_chat_component_](https://github.com/taizan-hokuto/pytchat/wiki/chat_component_) は、video_id、timeout、chatdataをキーに持つ辞書です。
 ```python
 chat_component = {
     "video_id" : "xxxxxxxxxxx",  #動画ID
