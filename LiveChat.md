@@ -23,7 +23,7 @@ while chat.is_alive():
 
 name|type|required|remarks|default value
 ---|---|---|---|---
-video_id|str|*|ID of youtube video.|-
+video_id|str|*|ID of youtube video, or youtube URL that includes ID.|-
 processor|ChatProcessor|||DefaultProcessor
 buffer|Buffer||buffer of chat data fetched background.|Buffer(maxsize=20)
 interruptable|bool||Allows keyboard interrupts. Set this parameter to `False` if your own threading program causes the problem.|True
