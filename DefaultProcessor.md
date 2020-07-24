@@ -165,46 +165,46 @@ Attributes of colors object.
   <tr>
     <td>headerBackgroundColor</td>
     <td>int (ARGB)</td>
-    <td>only type:`superChat`</td>
+    <td>available only type:`superChat`</td>
   </tr>
   <tr>
     <td>headerTextColor</td>
     <td>int (ARGB)</td>
-    <td>only type:`superChat`.</td>
+    <td>available only type:`superChat`.</td>
   </tr>
   <tr>
     <td>bodyBackgroundColor</td>
     <td>int (ARGB)</td>
-    <td>only type:`superChat`. Same as `bgColor`.</td>
+    <td>available only type:`superChat`. Same as `bgColor`.</td>
   </tr>
   <tr>
     <td>bodyTextColor</td>
     <td>int (ARGB)</td>
-    <td>only type:`superChat`</td>
+    <td>available only type:`superChat`</td>
+  </tr>
+  <tr>
+    <td>timestampColor</td>
+    <td>int (ARGB)</td>
+    <td>available only type:`superChat`</td>
   </tr>
   <tr>
     <td>authorNameTextColor</td>
     <td>int (ARGB)</td>
-    <td>only type:`superChat` and `superSticker`</td>
+    <td>available only type:`superChat` and `superSticker`</td>
   </tr>
   <tr>
     <td>backgroundColor</td>
     <td>int (ARGB)</td>
-    <td>only type:`superSticker`</td>
+    <td>available only type:`superSticker`</td>
   </tr>
   <tr>
     <td>moneyChipBackgroundColor</td>
     <td>int (ARGB)</td>
-    <td>only type:`superSticker`。Same as `bgColor`.</td>
+    <td>available only type:`superSticker`. Same as `bgColor`.</td>
   </tr>
   <tr>
     <td>moneyChipTextColor</td>
     <td>int (ARGB)</td>
-    <td>only type:`superSticker`</td>
-  </tr>
-  <tr>
-    <td>isChatModerator</td>
-    <td>int (ARGB)</td>
-    <td>only type:`superSticker`</td>
+    <td>available only type:`superSticker`</td>
   </tr>
 </table>
