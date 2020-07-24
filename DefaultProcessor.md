@@ -195,12 +195,12 @@ Attributes of colors object.
   <tr>
     <td>backgroundColor</td>
     <td>int (ARGB)</td>
-    <td>available only type:`superSticker`</td>
+    <td>available only type:`superSticker` Same as `bgColor`.</td>
   </tr>
   <tr>
     <td>moneyChipBackgroundColor</td>
     <td>int (ARGB)</td>
-    <td>available only type:`superSticker`. Same as `bgColor`.</td>
+    <td>available only type:`superSticker`</td>
   </tr>
   <tr>
     <td>moneyChipTextColor</td>
