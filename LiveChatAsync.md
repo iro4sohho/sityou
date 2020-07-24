@@ -33,7 +33,7 @@ if __name__=='__main__':
 
 name|type|required|remarks|default value
 ---|---|---|---|---
-video_id|str|*|ID of youtube video.|-
+video_id|str|*|ID of youtube video, or youtube URL that includes ID.|-
 processor|ChatPrcessor|||DefaultProcessor
 buffer|Buffer||buffer of chat data fetched background.|Buffer(maxsize=20)
 interruptable|bool|||True
