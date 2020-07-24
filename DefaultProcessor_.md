@@ -93,10 +93,16 @@ description|
   <tr>
     <td>author</td>
     <td>object</td>
-    <td>チャット投稿者データ。下記を参照。</td>
+    <td>チャット投稿者データ。<a href="#author">下記参照</a>。</td>
+  </tr>
+  <tr>
+    <td>colors</td>
+    <td>object</td>
+    <td>スーパーチャット・スパーステッカーの色データ。<a href="#colors">下記参照</a></td>
   </tr>
 </table>
 
+### author
 チャット投稿者データ
 <table>
   <tr>
@@ -148,5 +154,60 @@ description|
     <td>isChatModerator</td>
     <td>bool</td>
     <td>モデレータ</td>
+  </tr>
+</table>
+
+### colors
+色データ
+<table>
+  <tr>
+    <th>name</th>
+    <th>type</th>
+    <th>remarks</th>
+  </tr>
+  <tr>
+    <td>headerBackgroundColor</td>
+    <td>int (ARGB)</td>
+    <td>type:`superChat`でのみ利用可能</td>
+  </tr>
+  <tr>
+    <td>headerTextColor</td>
+    <td>int (ARGB)</td>
+    <td>type:`superChat`でのみ利用可能</td>
+  </tr>
+  <tr>
+    <td>bodyBackgroundColor</td>
+    <td>int (ARGB)</td>
+    <td>type:`superChat`でのみ利用可能。`bgColor`と同じ値を返します。</td>
+  </tr>
+  <tr>
+    <td>bodyTextColor</td>
+    <td>int (ARGB)</td>
+    <td>type:`superChat`でのみ利用可能</td>
+  </tr>
+  <tr>
+    <td>timestampColor</td>
+    <td>int (ARGB)</td>
+    <td>type:`superChat`でのみ利用可能</td>
+  </tr>
+  <tr>
+    <td>authorNameTextColor</td>
+    <td>int (ARGB)</td>
+    <td>type:`superChat` と `superSticker`でのみ利用可能</td>
+  </tr>
+  <tr>
+    <td>backgroundColor</td>
+    <td>int (ARGB)</td>
+    <td>type:`superSticker`でのみ利用可能</td>
+  </tr>
+  <tr>
+    <td>moneyChipBackgroundColor</td>
+    <td>int (ARGB)</td>
+    <td>type:`superSticker`でのみ利用可能。`bgColor`と同じ値を返します。</td>
+  </tr>
+  <tr>
+    <td>moneyChipTextColor</td>
+    <td>int (ARGB)</td>
+    <td>type:`superSticker`でのみ利用可能</td>
   </tr>
 </table>
