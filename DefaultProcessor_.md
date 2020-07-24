@@ -198,12 +198,12 @@ description|
   <tr>
     <td>backgroundColor</td>
     <td>int (ARGB)</td>
-    <td>type:`superSticker`でのみ利用可能</td>
+    <td>type:`superSticker`でのみ利用可能。`bgColor`と同じ値を返します。</td>
   </tr>
   <tr>
     <td>moneyChipBackgroundColor</td>
     <td>int (ARGB)</td>
-    <td>type:`superSticker`でのみ利用可能。`bgColor`と同じ値を返します。</td>
+    <td>type:`superSticker`でのみ利用可能。</td>
   </tr>
   <tr>
     <td>moneyChipTextColor</td>
