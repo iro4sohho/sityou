@@ -33,7 +33,7 @@ if __name__=='__main__':
 
 パラメータ名|型|必須|備考|規定値
 ---|---|---|---|---
-video_id|str|*|動画ID (`https://www.youtube.com/watch?v=xxx`　の「xxx」の部分)|-
+video_id|str|*|動画ID、または動画IDを含むURL (`https://www.youtube.com/watch?v=xxx`)|-
 processor|ChatProcessor||チャットを加工するオブジェクト|[DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor_)
 buffer|buffer||チャットデータを蓄積するバッファ|Buffer(maxsize=20)
 interruptable|bool||Ctrl+Cでチャット取得を停止するか否か|True
@@ -92,4 +92,15 @@ force_replay|bool| |指定した動画IDがライブ状態であっても、強�
 説明|
 ---|
 pytchatを終了します。|
+
+## raise_for_status()
+is_alive()がfalseになった後でこの関数を呼び出すと、終了原因に応じた例外を発生させます。
+
+発生する例外：
+### ChatDataFinished
++ アーカイブの終端に到達したことによりチャットストリームが終了したとき。
+
+### NoContents
++ チャットデータが存在しない、またはライブ配信終了によりチャットデータを取得できなくなったとき。
+
 
