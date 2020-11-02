@@ -15,7 +15,7 @@
 ## Chat Processor
  * [SuperchatCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SuperchatCalculator)
  * [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor)
- * CompatibleProcessor
+ * [CompatibleProcessor](https://github.com/taizan-hokuto/pytchat/wiki/CompatibleProcessor)
  * [HTMLArchiver](https://github.com/taizan-hokuto/pytchat/wiki/HTMLArchiver)
  * [TSVArchiver](https://github.com/taizan-hokuto/pytchat/wiki/TSVArchiver)
  * [JsonfileArchiver](https://github.com/taizan-hokuto/pytchat/wiki/JsonfileArchiver)
