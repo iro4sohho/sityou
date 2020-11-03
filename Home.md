@@ -6,7 +6,8 @@
 ### A lightweight python library to browse youtube livechat without Selenium or BeautifulSoup.
 
 
-## API
+## Objects
+ * [Core](https://github.com/taizan-hokuto/pytchat/wiki/Core)
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync)
  * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat)
  * [Extractor](https://github.com/taizan-hokuto/pytchat/wiki/Extractor)
