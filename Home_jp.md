@@ -27,8 +27,9 @@ pip install --upgrade pytchat
 ![demo](https://taizan-hokuto.github.io/statics/demo.gif "demo")
 
 ## API
- * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync_)
+ * [PytchatCore](https://github.com/taizan-hokuto/pytchat/wiki/PytchatCore_)
  * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat_)
+ * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync_)
  * [Extractor](https://github.com/taizan-hokuto/pytchat/wiki/Extractor_)
  * [VideoInfo](https://github.com/taizan-hokuto/pytchat/wiki/VideoInfo_)
 
