@@ -2,7 +2,7 @@
 
 Get with `pytchat.create()` function.
 
-```
+```python
 import pytchat
 import time
 
@@ -54,6 +54,11 @@ description|return value
 ---|---
 Terminate fetching livechat.|-
 
-<br>
-<br>
+
+## raise_for_status()
+Raise internal exception after is_alive()  becomes False.
+
+By this function, you can check the reason for the termination.
+
+*This function is valid only when `hold_exception==True`.
 
