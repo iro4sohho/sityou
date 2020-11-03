@@ -6,7 +6,7 @@ LiveChat object
 ## Usage
 ```python
 from pytchat import LiveChat
-chat = LiveChat(video_id = "Zvp1pJpie4I")
+chat = LiveChat(video_id = "uIx8l2xlYVY")
 
 while chat.is_alive():
   try:
