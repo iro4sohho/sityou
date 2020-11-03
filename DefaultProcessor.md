@@ -1,8 +1,9 @@
 DefaultProcessor is a default chat processor of pytchat.
-### Usage
+## Usage
 ```python
 import pytchat
-chat = pytchat.create(video_id="Zvp1pJpie4I")
+# DefaultProcessor is optional.
+chat = pytchat.create(video_id="Zvp1pJpie4I", processor=DefaultProcessor())
 while chat.is_alive():
     for c in chat.get().sync_items():
         print(f"{c.datetime} [{c.author.name}]- {c.message}")
@@ -15,7 +16,18 @@ Get list of [chat items](#members-of-chat-item).|List of chat items
 ## sync_items()
 description|return value
 ---|---
-Get [chat items](#members-of-chat-item) with automatically calculated interval.|Generator that yields of chat items
+Get [chat items](#members-of-chat-item) with automatically calculated interval.|Generator that yields chat items.
+
+## async_items()
+description|return value
+---|---
+Get [chat items](#members-of-chat-item) with automatically calculated interval in asyncio context.|Async generator that yields  chat items.
+
+*When you use `async_items()`, use `async for` sentence.
+```
+async for c in chat.get().async_items():
+   print(c.json())
+```
 
 ## tick() [DEPRECATE]
 description|return value
