@@ -1,17 +1,21 @@
 **PytchatCore** はチャットを取得するためのオブジェクトです。<br>
 
-＜指定した動画がライブの場合＞
+＜指定した動画がライブの場合＞<br>
+
 `get()`を呼ぶと、最新のチャットデータを取得します。<br>
 
 一度`get()`を呼んだあと、続けて`get()`を呼んだ場合、次のチャットデータを自動的に読み込みます。<br>
 
 ライブ配信に対して`get()`を呼び出す間隔の推奨値は3～5秒です。
-それより短ければよりリアルタイム性は高まりますが、あまりに短いとデータが空であるパターンが多くなるため効率は低くなります。
-一方取得間隔が長すぎるとデータの取りこぼしを生じる場合があります。<br>
 
+それより短ければよりリアルタイム性は高まりますが、あまりに短いとデータが空であるパターンが多くなるため効率は低くなります。
+
+一方取得間隔が長すぎるとデータの取りこぼしを生じる場合があります。<br>
+<br><br>
 ＜指定した動画がアーカイブ済みの場合＞
 
 `get()`を呼ぶと自動的にアーカイブされたチャットデータの最初からチャットデータを順次読み込みます。<br>
+
 `seektime`引数に時刻（秒）を指定することで、指定した時刻以降のチャットデータを順次読み込みます
 
 
@@ -20,7 +24,7 @@ PytchatCore オブジェクトは、pytchatをインポートして、create()�
 ```python
 import pytchat
 import time
-# PytchatCoreオブジェクトの生成
+# PytchatCoreオブジェクトの取得
 livechat = pytchat.create(video_id = "Zvp1pJpie4I")
 
 while livechat.is_alive():
@@ -39,12 +43,12 @@ while livechat.is_alive():
 
 パラメータ名|型|必須|備考|規定値
 ---|---|---|---|---
-video_id|str|*|動画ID (`https://www.youtube.com/watch?v=xxx`　の「xxx」の部分)|-
-processor|ChatProcessor||チャットを加工するオブジェクト|[DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor:)
-interruptable|bool||Ctrl+Cでチャット取得を停止するか否か|True
+video_id|str|*|動画ID または動画IDを含むURL|-
+processor|[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor)||チャットデータを加工するオブジェクト|[DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor:)
+interruptable|bool||Ctrl+Cでチャット取得を停止するか否か。pytchatを組み込んだアプリで不具合が生じる場合は、このパラメータをFalseに指定してください。|True
 seektime|int| |チャットリプレイの開始時間(秒)。アーカイブチャットのリプレイ時のみ有効。負の数を指定した場合、配信開始前に流れていたチャット（一部）を取得します。|0
 force_replay|bool| |指定した動画IDがライブ状態であっても、強制的にアーカイブされたチャットを取得します。|False
-hold_exception||内部で発生した例外を保持するかどうかを設定します。規定値はTrueです。Trueの場合、発生した例外を保持し、is_alive()関数がFalseになった後raise_for_status()関数を呼ぶことで、保持した例外を発生させることができます。Falseにした場合、例外を捕捉するため、get()の処理部分をtry...except節で囲む必要があります。
+hold_exception|bool||内部で発生した例外を保持するかどうかを設定します。規定値はTrueです。Trueの場合、発生した例外を保持し、is_alive()関数がFalseになった後raise_for_status()関数を呼ぶことで、保持した例外を発生させることができます。Falseにした場合、例外を捕捉するため、get()の処理部分をtry...except節で囲む必要があります。|True
 topchat_only|bool| |Trueの場合、上位チャットのみを取得します。（設定しない場合、またはFalseの場合「すべてのチャット」を取得）|False
 [logger](https://github.com/taizan-hokuto/pytchat/wiki/Logging-pytchat:)|logging.Logger||ログ出力を取得する場合、任意のLoggerオブジェクトを設定します。|logging.NullHandler
 ## get()
