@@ -2,8 +2,8 @@ DefaultProcessor is a default chat processor of pytchat.
 ## Usage
 ```python
 import pytchat
-# DefaultProcessor is optional.
-chat = pytchat.create(video_id="Zvp1pJpie4I", processor=DefaultProcessor())
+# `DefaultProcessor` parameter is optional.
+chat = pytchat.create(video_id="uIx8l2xlYVY", processor=DefaultProcessor())
 while chat.is_alive():
     for c in chat.get().sync_items():
         print(f"{c.datetime} [{c.author.name}]- {c.message}")
