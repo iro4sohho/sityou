@@ -1,30 +1,45 @@
 DefaultProcessor is a default chat processor of pytchat.
 ### Usage
 ```python
-chat = LiveChat("xxxxxxxxxxx") #video_id
-
+import pytchat
+chat = pytchat.create(video_id="Zvp1pJpie4I")
 while chat.is_alive():
-    data = chat.get() #get processed data.
-    items = data.items
-    for c in items:
-        print(c.author.name, c.message)
-        data.tick()
+    for c in chat.get().sync_items():
+        print(f"{c.datetime} [{c.author.name}]- {c.message}")
 ```
 ## items
 description|return value
 ---|---
 Get list of [chat items](#members-of-chat-item).|List of chat items
 
-## tick()
+## sync_items()
+description|return value
+---|---
+Get [chat items](#members-of-chat-item) with automatically calculated interval.|Generator that yields of chat items
+
+## tick() [DEPRECATE]
 description|return value
 ---|---
 wait for next chat.|-
 
-## [await] tick_async()
+## [await] tick_async() [DEPRECATE]
 description|return value
 ---|---
 wait for next chat on asyncio context.|-
 
+## json()
+return  JSON format chat data.
+```python
+chat = pytchat.create(video_id="xxxxxxxx")
+while chat.is_alive():
+    print(chat.get().json())
+    time.sleep(5)
+    '''
+    # Each chat item can also be output in JSON format.
+    for c in chat.get().sync_items():
+        print(c.json())
+    '''     
+```
 
 ## Attributes of Chat Item
 
