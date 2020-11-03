@@ -1,14 +1,22 @@
-PytchatCore オブジェクト
+**PytchatCore** はチャットを取得するためのオブジェクトです。<br>
 
-PytchatCore はチャットを取得するためのオブジェクトです。<br>
-get()を呼んだ時点で存在する最新のチャットデータを取得します。<br>
-timeout時間以内に続けてget()を呼んだ場合、次のチャットを自動的に読み込みます。<br>
-（指定した動画がアーカイブ済みの場合、自動的にアーカイブされたチャットデータの最初もしくはseekdata引数に指定した時刻のチャットデータを順次読み込みます。）<br>
+＜指定した動画がライブの場合＞
+`get()`を呼ぶと、最新のチャットデータを取得します。<br>
 
-PytchatCore オブジェクトは、pytchatをインポートして、create()関数を呼ぶことで取得できます。<br>
+一度`get()`を呼んだあと、続けて`get()`を呼んだ場合、次のチャットデータを自動的に読み込みます。<br>
+
+ライブ配信に対して`get()`を呼び出す間隔の推奨値は3～5秒です。
+それより短ければよりリアルタイム性は高まりますが、あまりに短いとデータが空であるパターンが多くなるため効率は低くなります。
+一方取得間隔が長すぎるとデータの取りこぼしを生じる場合があります。<br>
+
+＜指定した動画がアーカイブ済みの場合＞
+
+`get()`を呼ぶと自動的にアーカイブされたチャットデータの最初からチャットデータを順次読み込みます。<br>
+`seektime`引数に時刻（秒）を指定することで、指定した時刻以降のチャットデータを順次読み込みます
+
 
 ## 使用例
-
+PytchatCore オブジェクトは、pytchatをインポートして、create()関数を呼ぶことで取得できます。<br>
 ```python
 import pytchat
 import time
@@ -36,13 +44,13 @@ processor|ChatProcessor||チャットを加工するオブジェクト|[DefaultP
 interruptable|bool||Ctrl+Cでチャット取得を停止するか否か|True
 seektime|int| |チャットリプレイの開始時間(秒)。アーカイブチャットのリプレイ時のみ有効。負の数を指定した場合、配信開始前に流れていたチャット（一部）を取得します。|0
 force_replay|bool| |指定した動画IDがライブ状態であっても、強制的にアーカイブされたチャットを取得します。|False
-hold_exception||内部で発生した例外を保持するかどうかを設定します。規定値はTrueです。Trueの場合、発生した例外を保持し、is_alive()関数がFalseになった後raise_for_status()関数を呼ぶことで、保持した例外を発生させることができます。Falseにした場合、例外を補足するため、get()の処理部分をtry...except節で補足する必要があります。
+hold_exception||内部で発生した例外を保持するかどうかを設定します。規定値はTrueです。Trueの場合、発生した例外を保持し、is_alive()関数がFalseになった後raise_for_status()関数を呼ぶことで、保持した例外を発生させることができます。Falseにした場合、例外を捕捉するため、get()の処理部分をtry...except節で囲む必要があります。
 topchat_only|bool| |Trueの場合、上位チャットのみを取得します。（設定しない場合、またはFalseの場合「すべてのチャット」を取得）|False
 [logger](https://github.com/taizan-hokuto/pytchat/wiki/Logging-pytchat:)|logging.Logger||ログ出力を取得する場合、任意のLoggerオブジェクトを設定します。|logging.NullHandler
 ## get()
 説明|戻り値
 ---|---
-チャットデータをbufferから取得します。|ChatProcessorによって加工されたチャットデータ
+チャットデータをbufferから取得します。（冒頭の説明文参照）|ChatProcessorによって加工されたチャットデータ
 
 
 ## is_alive()
