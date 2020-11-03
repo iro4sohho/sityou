@@ -7,7 +7,7 @@ Get with `pytchat.create()` function.
 import pytchat
 import time
 
-chat = pytchat.create(video_id="Zvp1pJpie4I")
+chat = pytchat.create(video_id="uIx8l2xlYVY")
 
 while chat.is_alive():
     chatdata = chat.get()
