@@ -1,6 +1,7 @@
 
 <img src="https://taizan-hokuto.github.io/statics/LOGO.png" width="400">
 
+現在日本語は更新中です。英語版の内容の方が新しい。
 
 #### pytchatは、YouTubeチャットを閲覧するためのpythonライブラリです。
 
