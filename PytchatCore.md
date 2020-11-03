@@ -35,14 +35,13 @@ direct_mode|bool| |If True, invoke specified callback function without using buf
 seektime|int| |start position of fetching chat (seconds). This option is valid for archived chat only. If negative value, fetches chatdata which is posted before start broadcasting.|0
 force_replay|bool| |force to fetch archived chat data, even if specified video is live.|False
 topchat_only|bool| |If True, get only top chat.|False
+hold_exception|bool| |If True, when exceptions occur, the exception is held internally, and can be raised by raise_for_status().|True
 [logger](https://github.com/taizan-hokuto/pytchat/wiki/Logging-pytchat)|logging.Logger| |any Logger object|internal logger(set NullHandler)
 
 ## get()
 description|return value
 ---|---
 Get processed chat data from buffer.|processed chat data
-
-*When callback parameter is set, get() function is not available. (Illegal function call occurs.)
 
 ## is_alive()
 description|return value
@@ -54,11 +53,10 @@ description|return value
 ---|---
 Terminate fetching livechat.|-
 
-
 ## raise_for_status()
 Raise internal exception after is_alive()  becomes False.
 
 By this function, you can check the reason for the termination.
 
-*This function is valid only when `hold_exception==True`.
+*This function is valid only when `hold_exception` option is True.
 
