@@ -21,7 +21,7 @@ while livechat.is_alive():
     break
 ```
 
-#### callback モード（推奨）
+#### callback モード
 パラメータcallbackに任意の関数を指定することでcallbackモードになります。
 指定した関数にバックグラウンドでチャットデータを渡します。
 （※calllbackモードのときは、get()を使用できません）
