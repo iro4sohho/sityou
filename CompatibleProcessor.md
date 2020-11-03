@@ -6,7 +6,7 @@
 from pytchat import LiveChat, CompatibleProcessor
 import time
 
-chat = LiveChat("Zvp1pJpie4I", 
+chat = LiveChat("uIx8l2xlYVY", 
   processor = CompatibleProcessor() )
 
 while chat.is_alive():
