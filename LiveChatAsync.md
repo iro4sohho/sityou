@@ -6,7 +6,6 @@ LiveChatAsync object
 ## Usage
 ```python
 from pytchat import LiveChatAsync
-from concurrent.futures import CancelledError
 import asyncio
 
 async def main():
@@ -15,21 +14,30 @@ async def main():
     await asyncio.sleep(3)
     #other background operation.
 
+  # If you want to check the reason for the termination, 
+  # you can use `raise_for_status()` function.
+  try:
+    livechat.raise_for_status()
+  except pytchat.ChatDataFinished:
+    print("Chat data finished.")
+  except Exception as e:
+    print(type(e), str(e))
+
 #callback function is automatically called periodically.
 async def func(chatdata):
   for c in chatdata.items:
     print(f"{c.datetime} [{c.author.name}]-{c.message} {c.amountString}")
     await chatdata.tick_async()
 
+
 if __name__=='__main__':
   try:
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main())
-  except CancelledError:
+  except asyncio.exceptions.CancelledError:
     pass
-
 ```
-## #constructor params
+## constructor params
 
 name|type|required|remarks|default value
 ---|---|---|---|---
@@ -62,7 +70,11 @@ pause fetching chat (*callback mode only)
 resume fetching chat (*callback mode only)
 
 
-
 ## terminate()
-Terminate pytchat.
+Finish getting the chat.
+
+
+## raise_for_status()
+Raise internal excetion after is_alive()  becomes False.
+By this function, you can check the reason for the termination.
 
