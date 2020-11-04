@@ -1,6 +1,6 @@
-pytchatは、バックグラウンドでチャットデータを取得しBuffer（FIFOキュー）に貯めることで、チャットデータの取得タイミングと独立に、データを利用できるようにしています。
+[LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat_)/[LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync_)は、バックグラウンドでチャットデータを取得しBuffer（FIFOキュー）に貯めることで、チャットデータの取得タイミングと独立に、データを利用できるようにしています。
 
-pytchatの動作モードは以下の3つがあります。
+動作モードは以下の3つがあります。
 
 ## on-demandモード
 get()により、任意のタイミングでBufferにあるチャットデータを取り出すことができます。
