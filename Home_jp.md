@@ -1,7 +1,6 @@
 
 <img src="https://taizan-hokuto.github.io/statics/LOGO.png" width="400">
 
-現在日本語は更新中です。英語版の内容の方が新しい。
 
 #### pytchatは、YouTubeチャットを閲覧するためのpythonライブラリです。
 
@@ -26,7 +25,7 @@ pip install --upgrade pytchat
 ## 動作DEMO
 ![demo](https://taizan-hokuto.github.io/statics/demo.gif "demo")
 
-## API
+## Objects
  * [PytchatCore](https://github.com/taizan-hokuto/pytchat/wiki/PytchatCore_)
  * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat_)
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync_)
