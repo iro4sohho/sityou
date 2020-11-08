@@ -38,7 +38,7 @@ hold_exception|bool| |If True, when exceptions occur, the exception is held inte
 ## get()
 description|return value
 ---|---
-Get processed chat data from buffer.|processed chat data
+Get processed chat data.|processed chat data
 
 ## is_alive()
 description|return value
