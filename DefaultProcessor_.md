@@ -11,7 +11,7 @@ while chat.is_alive():
         print(f"{c.datetime} [{c.author.name}]- {c.message}")
 ```
 
-```
+
 ## items
 description|return value
 ---|---
