@@ -22,6 +22,17 @@ except Exception as e:
    print(type(e), str(e))
 ```
 
+
+#### Display chats at appropriate intervals. 
+```python
+import pytchat
+chat = pytchat.create(video_id="uIx8l2xlYVY")
+
+while chat.is_alive():
+    for chat.get().sync_items()
+        print(f"{c.datetime} {c.author.name} {c.message}")
+
+```
 ## constructor params
 
 name|type|required|remarks|default value
