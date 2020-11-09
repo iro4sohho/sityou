@@ -1,16 +1,15 @@
-<br>
-pytchatでは、processorパラメータに何も指定しない場合、このDefaultProcessorによって加工されたチャットデータが返されます。<br>
+DefaultProcessorは、pytchatの既定の[Chat Processor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor)です。
+
 
 ### 使用例
+
 ```python
-chat = LiveChat("xxxxxxxxxxx") #video_id
-#chat = LiveChat("xxxxxxxxxxx", processor = DefaultProcessor()) と同義。
+import pytchat
+chat = pytchat.create(video_id="uIx8l2xlYVY", processor=DefaultProcessor())
 while chat.is_alive():
-    data = chat.get() #get processed data.
-    items = data.items
-    for c in items:
-        print(f"{c.datetime} [{c.author.name}]-{c.message} -{c.amountString}")
-        data.tick()
+    for c in chat.get().sync_items():
+        print(f"{c.datetime} [{c.author.name}]- {c.message}")
+```
 ```
 ## items
 description|return value
