@@ -16,12 +16,12 @@ Get list of [chat items](#members-of-chat-item).|List of chat items
 ## sync_items()
 description|return value
 ---|---
-Get [chat items](#members-of-chat-item) with automatically calculated interval.|Generator that yields chat items.
+Get [chat items](#members-of-chat-item) with automatically calculated interval.|[Generator iterator](https://docs.python.org/3/glossary.html#term-generator-iterator) that yields chat items.
 
 ## async_items()
 description|return value
 ---|---
-Get [chat items](#members-of-chat-item) with automatically calculated interval in asyncio context.|Async generator that yields  chat items.
+Get [chat items](#members-of-chat-item) with automatically calculated interval in asyncio context.|[Async generator iterator](https://docs.python.org/3/glossary.html#term-asynchronous-generator-iterator) that yields  chat items.
 
 *When you use `async_items()`, use `async for` sentence.
 ```
