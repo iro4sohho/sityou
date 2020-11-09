@@ -29,7 +29,7 @@ import pytchat
 chat = pytchat.create(video_id="uIx8l2xlYVY")
 
 while chat.is_alive():
-    for chat.get().sync_items()
+    for c in chat.get().sync_items()
         print(f"{c.datetime} {c.author.name} {c.message}")
 
 ```
