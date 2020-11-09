@@ -15,11 +15,11 @@ while chat.is_alive():
     time.sleep(5)
 
 try:
-   chat.raise_for_status()
+    chat.raise_for_status()
 except pytchat.ChatdataFinished:
-   print("chat data finished")
+    print("chat data finished")
 except Exception as e:
-   print(type(e), str(e))
+    print(type(e), str(e))
 ```
 
 
