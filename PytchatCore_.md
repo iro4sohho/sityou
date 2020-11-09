@@ -32,12 +32,14 @@ while livechat.is_alive():
     # チャットデータの取得
     chatdata = livechat.get()
     for c in chatdata.items:
+        print(f"{c.datetime} {c.author.name} {c.message} {c.amountString}")
+        '''
+        JSON文字列で取得:
         print(c.json())
+        '''
     time.sleep(5)
-
-
 ```
-※ json(), items は [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor_)固有の機能です。
+※ items は [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor_)固有の機能です。
 
 
 ## コンストラクタで指定可能なパラメータ一覧
