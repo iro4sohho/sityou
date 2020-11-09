@@ -10,6 +10,7 @@ while chat.is_alive():
     for c in chat.get().sync_items():
         print(f"{c.datetime} [{c.author.name}]- {c.message}")
 ```
+
 ```
 ## items
 description|return value
