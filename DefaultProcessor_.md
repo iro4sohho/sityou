@@ -15,14 +15,36 @@ while chat.is_alive():
 ## items
 description|return value
 ---|---
-[チャットデータ](#チャットデータ)のリストを取得します。|チャットデータのリスト
+[チャットデータ](#チャットデータ)のリストを返します。|チャットデータのリスト
 
-## tick()
+
+## sync_items()
+description|return value
+---|---
+[チャットデータ](#チャットデータ)のイテレータを返します。チャットアイテム1件ごとに自動的に計算された時間だけ停止します。|チャットデータのイテレータ
+
+
+## async_items()
+description|return value
+---|---
+[チャットデータ](#チャットデータ)の非同期イテレータを返します。チャットアイテム1件ごとに自動的に計算された時間だけ停止します。|チャットデータの非同期イテレータ
+
+async_items()を使用する際は、下記のように`async for`構文を使用します。
+
+```
+async for c in chat.get().async_items():
+    print(c.json())
+```
+
+## json()
+チャットデータのJSONフォーマット文字列を返します。
+
+## tick() [非推奨]
 description|
 ---|
 次のチャットが表示されるまで待ちます.|
 
-## _await_ 　tick_async()
+## _await_ 　tick_async() [非推奨]
 description|
 ---|
 （LiveChatAsync使用時のみ有効）次のチャットが表示されるまで待ちます。この関数はawaitをつけて呼び出さなければなりません。|
