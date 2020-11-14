@@ -47,7 +47,7 @@ while livechat.is_alive():
 パラメータ名|型|必須|備考|規定値
 ---|---|---|---|---
 video_id|str|*|動画ID または動画IDを含むURL|-
-processor|[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor)||チャットデータを加工するオブジェクト|[DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor)
+processor|[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor)||チャットデータを加工するオブジェクト|[DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor_)
 interruptable|bool||Ctrl+Cでチャット取得を停止するか否か。pytchatを組み込んだアプリで不具合が生じる場合は、このパラメータをFalseに指定してください。|True
 seektime|int| |チャットリプレイの開始時間(秒)。アーカイブチャットのリプレイ時のみ有効。負の数を指定した場合、配信開始前に流れていたチャット（一部）を取得します。|0
 force_replay|bool| |指定した動画IDがライブ状態であっても、強制的にアーカイブされたチャットを取得します。|False
