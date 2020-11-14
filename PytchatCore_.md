@@ -39,7 +39,7 @@ while livechat.is_alive():
         '''
     time.sleep(5)
 ```
-※ items は [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor_)固有の機能です。
+※ items/json() は [DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor_)固有の機能です。
 
 
 ## コンストラクタで指定可能なパラメータ一覧
