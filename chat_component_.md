@@ -1,8 +1,16 @@
 # chat_component
 
 chat_componentは、pytchat内で使用する、チャットデータのブロックです。
+<br>
 
-Youtubeから1回に取得できるチャットデータのリスト(約5秒～10秒分）に相当し、一定間隔でバッファに蓄積されます。
+＜[PytchatCore](https://github.com/taizan-hokuto/pytchat/wiki/PytchatCore_)（`pytchat.create()`で取得できるオブジェクト）での動作＞
+<br>
+  get()関数を呼び出すと、取得されたチャットデータが、Chat Processorに渡され、任意の形式に加工されたデータが返ってきます。
+<br>
+
+＜[LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat_)／[LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync_)での動作＞
+<br>
+LiveChat、LiveChatAsyncオブジェクトでは、チャットデータが一定間隔で取得されバッファに蓄積されます。
 <br><br>
 LiveChat.get()関数を呼び出すと、バッファ内のchat_componentのリストがChat Processorに渡され、任意の形式に加工されたデータが返ってきます。
 <br><br>
