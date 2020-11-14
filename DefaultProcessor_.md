@@ -27,7 +27,7 @@ description|return value
 ## async_items()
 description|return value
 ---|---
-[チャットデータ](#チャットデータ)の非同期イテレータを返します。チャットアイテム1件ごとに自動的に計算された時間だけ停止（`await ayncio.sleep()`）します。|チャットデータの非同期イテレータ
+[チャットデータ](#チャットデータ)の非同期イテレータを返します。チャットアイテム1件ごとに自動的に計算された時間だけ停止（`await asyncio.sleep()`）します。|チャットデータの非同期イテレータ
 
 async_items()を使用する際は、下記のように`async for`構文を使用します。
 
