@@ -55,9 +55,7 @@ hold_exception|bool||内部で発生した例外を保持するかどうかを�
 topchat_only|bool| |Trueの場合、上位チャットのみを取得します。（設定しない場合、またはFalseの場合「すべてのチャット」を取得）|False
 [logger](https://github.com/taizan-hokuto/pytchat/wiki/Logging-pytchat:)|logging.Logger||ログ出力を取得する場合、任意のLoggerオブジェクトを設定します。|logging.NullHandler
 ## get()
-説明|戻り値
----|---
-チャットデータを取得します。（冒頭の説明文参照）|ChatProcessorによって加工されたチャットデータ
+[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)によって加工されたチャットデータを取得します。
 
 
 ## is_alive()
