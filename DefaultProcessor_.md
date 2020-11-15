@@ -38,6 +38,23 @@ async for c in chat.get().async_items():
 
 ## json()
 チャットデータのJSONフォーマット文字列を返します。
+get()で取得できるチャットデータのリストおよび、個々のチャットそれぞれにjson()関数を適用することができます。
+
+```python
+livechat = pytchat.create(video_id="xxxxxxxx")
+while livechat.is_alive():
+    # チャットデータのリスト
+    chatdata = livechat.get()
+    print(chatdata.json())
+
+    # 個々のチャット
+    for c in chatdata.items:
+        print(c.json())
+
+    time.sleep(5)
+
+```
+
 
 ## tick() [非推奨]
 description|
