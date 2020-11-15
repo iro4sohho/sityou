@@ -24,7 +24,7 @@ description|return value
 Get [chat items](#members-of-chat-item) with automatically calculated interval in asyncio context.|[Async generator iterator](https://docs.python.org/3/glossary.html#term-asynchronous-generator-iterator) that yields  chat items.
 
 *When you use `async_items()`, use `async for` sentence.
-```
+```python
 async for c in chat.get().async_items():
    print(c.json())
 ```
