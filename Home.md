@@ -10,8 +10,7 @@
  * [PytchatCore](https://github.com/taizan-hokuto/pytchat/wiki/Pytchatcore) (`pytchat.create()`)
  * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat)
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync)
- * [Extractor](https://github.com/taizan-hokuto/pytchat/wiki/Extractor)
- * [VideoInfo](https://github.com/taizan-hokuto/pytchat/wiki/VideoInfo)
+
 
 ## Chat Processor
  * [SuperchatCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SuperchatCalculator)
