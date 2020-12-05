@@ -7,7 +7,6 @@
 ＜pytchatライブラリが提供する機能＞
 + YouTubeのライブチャットを閲覧。
 + アーカイブされたチャットのリプレイ。
-+ スパチャ金額の集計やチャットデータの保存。
 + 上位チャットだけでなく「すべてのチャット」を選択した場合に表示されるデータを扱えます。
 
 <br>
@@ -29,8 +28,6 @@ pip install --upgrade pytchat
  * [PytchatCore](https://github.com/taizan-hokuto/pytchat/wiki/PytchatCore_)
  * [LiveChat](https://github.com/taizan-hokuto/pytchat/wiki/LiveChat_)
  * [LiveChatAsync](https://github.com/taizan-hokuto/pytchat/wiki/LiveChatAsync_)
- * [Extractor](https://github.com/taizan-hokuto/pytchat/wiki/Extractor_)
- * [VideoInfo](https://github.com/taizan-hokuto/pytchat/wiki/VideoInfo_)
 
 ## Chat Processor（チャットデータを加工するための組み込みのクラス）
  * [SuperchatCalculator](https://github.com/taizan-hokuto/pytchat/wiki/SuperchatCalculator_)
