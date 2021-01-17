@@ -34,6 +34,12 @@ seektime|int| |start position of fetching chat (seconds). This option is valid f
 force_replay|bool| |force to fetch archived chat data, even if specified video is live.|False
 topchat_only|bool| |If True, get only top chat.|False
 [logger](https://github.com/taizan-hokuto/pytchat/wiki/Logging-pytchat)|logging.Logger| |any Logger object|internal logger(set NullHandler)
+replay_continuation|str| |continuation parameter(archived chat only)|None
+
+## continuation
+The continuation parameter of recent chat data.<br>
+This parameter can be used for retrieving chat data of any timing by specifying in the constructor as `replay_continuation`.<br>
+(This parameter is valid only archived chat data.)
 
 ## get()
 description|return value
