@@ -61,7 +61,7 @@ while stream.is_alive():
     break
 
 # retrieve chatdata from the continuation.
-stream = LiveChat(video_id = "uIx8l2xlYVY", replay_continuation=contuation)
+stream = LiveChat(video_id = "uIx8l2xlYVY", replay_continuation=continuation)
 data = stream.get()
 items = data.items
 for c in items:
