@@ -44,14 +44,22 @@ name|type|required|remarks|default value
 video_id|str|*|ID of youtube video, or youtube URL that includes ID.|-
 processor|ChatPrcessor|||DefaultProcessor
 buffer|Buffer||buffer of chat data fetched background.|Buffer(maxsize=20)
-interruptable|bool|||True
+interruptable|bool||Allows keyboard interrupts. Set this parameter to False if your own threading program causes the problem.|True
 callback|func||function called from _listen()  periodically.|None
 done_callback|func||function called when listener ends.|None
 exception_handler|func||function called when exceptions occur.|None
 direct_mode|bool| |If True, invoke specified callback function without using buffer.|False
-seektime|int| |start position of fetching chat (seconds). This option is valid for archived chat only. If negative value, fetches chatdata which is posted before start broadcasting.|0
+seektime|int| |~~start position of fetching chat (seconds). This option is valid for archived chat only. If negative value, fetches chatdata which is posted before start broadcasting.~~ **This parameter is not working well. We'll deal with it as soon as possible.** |0
 force_replay|bool| |force to fetch archived chat data, even if specified video is live.|False
 topchat_only|bool| |If True, get only top chat.|False
+replay_continuation|str| |continuation parameter(archived chat only)|None
+
+## continuation
+The continuation parameter of recent chat data.<br>
+This parameter can be used for retrieving chat data of any timing by specifying in the constructor as `replay_continuation`.<br>
+(This parameter is valid only archived chat data.)
+
+
 ## await get()
 description|return value
 ---|---
