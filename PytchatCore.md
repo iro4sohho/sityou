@@ -40,7 +40,7 @@ name|type|required|remarks|default value
 video_id|str|*|ID of youtube video, or youtube URL that includes ID.|-
 processor|[ChatProcessor](https://github.com/taizan-hokuto/pytchat/wiki/ChatProcessor)|||[DefaultProcessor](https://github.com/taizan-hokuto/pytchat/wiki/DefaultProcessor)
 interruptable|bool||Allows keyboard interrupts. Set this parameter to `False` if your own threading program causes the problem.|True
-seektime|int| |start position of fetching chat (seconds). This option is valid for archived chat only. If negative value, fetches chatdata which is posted before start broadcasting.|0
+seektime|int| |~~start position of fetching chat (seconds). This option is valid for archived chat only. If negative value, fetches chatdata which is posted before start broadcasting.~~ **This parameter is not working well. We'll deal with it as soon as possible.**|0
 force_replay|bool| |force to fetch archived chat data, even if specified video is live.|False
 topchat_only|bool| |If True, get only top chat.|False
 hold_exception|bool| |If True, when exceptions occur, the exception is held internally, and can be raised by raise_for_status().|True
@@ -51,6 +51,33 @@ replay_continuation|str| |continuation parameter(archived chat only)|None
 The continuation parameter of recent chat data.<br>
 This parameter can be used for retrieving chat data of any timing by specifying in the constructor as `replay_continuation`.<br>
 (This parameter is valid only archived chat data.)
+#### Example code
+```python
+import pytchat
+import time
+stream = pytchat.create(video_id = "uIx8l2xlYVY")
+i = 0
+while stream.is_alive():
+  data = stream.get()
+  items = data.items
+  for c in items:
+      print(f"{c.datetime} [{c.author.name}]- {c.message}")
+  time.sleep(3)
+  i += 1
+  if i == 3:
+    # get the continuation parameter
+    continuation = stream.continuation
+    stream.terminate()
+    break
+
+# retrieve chatdata from the continuation.
+stream = pytchat.create(video_id = "uIx8l2xlYVY", replay_continuation=continuation)
+data = stream.get()
+items = data.items
+for c in items:
+    print(f"{c.datetime} [{c.author.name}]- {c.message}")
+stream.terminate()
+```
 
 ## get()
 description|return value
