@@ -6,6 +6,7 @@ LiveChat object
 ## Usage
 ```python
 from pytchat import LiveChat
+import time
 chat = LiveChat(video_id = "uIx8l2xlYVY")
 
 while chat.is_alive():
@@ -14,7 +15,7 @@ while chat.is_alive():
     items = data.items
     for c in items:
         print(f"{c.datetime} [{c.author.name}]- {c.message}")
-        data.tick()
+    time.sleep(3)
   except KeyboardInterrupt:
     chat.terminate()
     break
@@ -30,7 +31,7 @@ interruptable|bool||Allows keyboard interrupts. Set this parameter to `False` if
 callback|func||function called periodically.|None
 done_callback|func||function called when listener ends.|None
 direct_mode|bool| |If True, invoke specified callback function without using buffer.|False
-seektime|int| |start position of fetching chat (seconds). This option is valid for archived chat only. If negative value, it is treated as 0.|0
+seektime|int| |~~start position of fetching chat (seconds). This option is valid for archived chat only. If negative value, it is treated as 0.~~ **This parameter is not working well. We'll deal with it as soon as possible.**|0
 force_replay|bool| |force to fetch archived chat data, even if specified video is live.|False
 topchat_only|bool| |If True, get only top chat.|False
 [logger](https://github.com/taizan-hokuto/pytchat/wiki/Logging-pytchat)|logging.Logger| |any Logger object|internal logger(set NullHandler)
@@ -40,6 +41,33 @@ replay_continuation|str| |continuation parameter(archived chat only)|None
 The continuation parameter of recent chat data.<br>
 This parameter can be used for retrieving chat data of any timing by specifying in the constructor as `replay_continuation`.<br>
 (This parameter is valid only archived chat data.)
+#### Example code
+```python
+from pytchat import LiveChat
+import time
+stream = LiveChat(video_id = "uIx8l2xlYVY")
+i = 0
+while stream.is_alive():
+  data = stream.get()
+  items = data.items
+  for c in items:
+      print(f"{c.datetime} [{c.author.name}]- {c.message}")
+  time.sleep(3)
+  i += 1
+  if i == 3:
+    # get the continuation parameter
+    continuation = stream.continuation
+    stream.terminate()
+    break
+
+# retrieve chatdata from the continuation.
+stream = LiveChat(video_id = "uIx8l2xlYVY", replay_continuation=contuation)
+data = stream.get()
+items = data.items
+for c in items:
+    print(f"{c.datetime} [{c.author.name}]- {c.message}")
+stream.terminate()
+```
 
 ## get()
 description|return value
